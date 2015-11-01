@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>xmlViewer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+</head>
+<body>
+  <!--[if lt IE 10]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+  <div class="container">
+    <div class="header">
+      <!-- <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul> -->
+    <h3 class="text-muted">xmlViewer</h3>
+  </div>
+
+
+  <div class="row marketing" id="xmlTree">
+    <ul class="children treeview"></ul>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <!-- <pre>
+      &lt?xml version="1.0" encoding="utf-8"?&gt
+      &ltFullContext&gt
+      &ltFcTestSteps&gt
+      &ltTestStep Name="GetExecutionData"&gt
+      &ltEstTime&gt00:30:00&lt/EstTime&gt
+      &ltExe Name="getExecutionData.py"&gt
+      &ltWorkingDirType&gtString&lt/WorkingDirType&gt
+      &ltWorkingDir&gttestModuleApi&lt/WorkingDir&gt
+      &ltArg&gt&lt/Arg&gt
+      &lt/Exe&gt
+      &lt/TestStep&gt
+      &lt/FcTestSteps&gt
+      &ltFcScript Name="MyScript"&gt
+      &ltSBlockItemList&gt
+      &ltTestStep Name="GetExecutionData" IsRestartPoint="True" /&gt
+      &lt/SBlockItemList&gt
+      &lt/FcScript&gt
+      &ltFcVarSets&gt
+      &lt/FcVarSets&gt
+      &ltFcScriptEvents&gt
+      &ltScriptEvent Type="OnStart"&gt
+      &ltSBlockItemList&gt
+      &lt/SBlockItemList&gt
+      &lt/ScriptEvent&gt
+      &ltScriptEvent Type="OnStop"&gt
+      &ltSBlockItemList&gt
+      &lt/SBlockItemList&gt
+      &lt/ScriptEvent&gt
+      &ltScriptEvent Type="OnComplete"&gt
+      &ltSBlockItemList&gt
+      &lt/SBlockItemList&gt
+      &lt/ScriptEvent&gt
+      &ltScriptEvent Type="Finally"&gt
+      &ltSBlockItemList&gt
+      &lt/SBlockItemList&gt
+      &lt/ScriptEvent&gt
+      &lt/FcScriptEvents&gt
+      &lt/FullContext&gt
+    </pre> -->
+  </div>
+
+  <div class="footer">
+    <p>xmlViewer ssjoleary 2015</p>
+  </div>
+</div>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+
+<!-- build:js(.) scripts/plugins.js -->
+<script src="/bower_components/bootstrap/js/affix.js"></script>
+<script src="/bower_components/bootstrap/js/alert.js"></script>
+<script src="/bower_components/bootstrap/js/dropdown.js"></script>
+<script src="/bower_components/bootstrap/js/tooltip.js"></script>
+<script src="/bower_components/bootstrap/js/modal.js"></script>
+<script src="/bower_components/bootstrap/js/transition.js"></script>
+<script src="/bower_components/bootstrap/js/button.js"></script>
+<script src="/bower_components/bootstrap/js/popover.js"></script>
+<script src="/bower_components/bootstrap/js/carousel.js"></script>
+<script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+<script src="/bower_components/bootstrap/js/collapse.js"></script>
+<script src="/bower_components/bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+</body>
+</html>

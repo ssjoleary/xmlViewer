@@ -1,0 +1,1819 @@
+<UUTState><int>1</int><string>c:\EMC\ProductPackages\992-920-439\Scripts\Rockies_FC.xml</string><UnitStatus>Testing</UnitStatus><TestExecStatus>Running</TestExecStatus><TestExecStatus>Finished</TestExecStatus><SequencerUutInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><SequenceFileName>Rockies_FC.xml</SequenceFileName><StepTotal>194</StepTotal><StepCurrent>11</StepCurrent><StepName>AceGeneConfigCheck</StepName><EstCompletionTime>2015-10-26T18:37:28.171875+00:00</EstCompletionTime></SequencerUutInformation><ArrayOfSequencerStepStatus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><SequencerStepStatus><Index>1</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SetupForSync</Name><Duration>00:00:13.8281250</Duration><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:15:59.03125+01:00</StartTime><EndTime>2015-10-24T07:16:12.859375+01:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>2</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>InitTestLocation</Name><Duration>00:00:10.3906250</Duration><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:16:13.15625+01:00</StartTime><EndTime>2015-10-24T07:16:23.546875+01:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>3</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>RockiesLogin_Msg</Name><Duration>00:02:15.4062500</Duration><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:16:23.828125+01:00</StartTime><EndTime>2015-10-24T07:18:39.234375+01:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>4</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CheckVaultPack_MSG</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>5</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GetACE</Name><Duration>00:00:30.7343750</Duration><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:18:39.546875+01:00</StartTime><EndTime>2015-10-24T07:19:10.28125+01:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>6</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>ParseACE</Name><Duration>00:00:11.3125000</Duration><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:19:10.578125+01:00</StartTime><EndTime>2015-10-24T07:19:21.890625+01:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>7</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SPSOnMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>8</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SendTLA_GetGenealogy</Name><Duration>00:00:26.2812500</Duration><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:19:22.203125+01:00</StartTime><EndTime>2015-10-24T07:19:48.484375+01:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>9</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>ParseGenealogy_UnNested</Name><Duration>00:00:11.6562500</Duration><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:19:48.8125+01:00</StartTime><EndTime>2015-10-24T07:20:00.46875+01:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>10</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>LoginUpdate</Name><Duration>00:00:42.0312500</Duration><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:20:00.75+01:00</StartTime><EndTime>2015-10-24T07:20:42.78125+01:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>11</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>AceGeneConfigCheck</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><Text>Complete</Text><BackgroundColor /><ForegroundColor /></Status><Iteration>1</Iteration><StartTime>2015-10-24T07:20:43.09375+01:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>12</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>x8CableMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>13</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ConfigPower</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>14</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>RockiesInitVars</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>15</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SetUutIdConfigs</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>16</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ChkUBSEEnablers</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>17</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PwrOffPriCS</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>18</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PwrOffSecCS</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>19</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ResetPwrCyclVar_RokDiags</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>20</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>MonPwrUp_ClrDMI_PreDiags_115200</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>21</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GetMacAddresses</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>22</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ResumeWrite</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>23</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SyncCopyICAPlatty</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>24</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>Copy.ICA.Platty.Conf</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>25</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SetEnclSysType_Post</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>26</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PlatypusICARegisterMAC</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>27</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ResetPwrCyclVar_RokDiags</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>28</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>MonPwrUp_Platypus_115200</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>29</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DAECountVerify</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>30</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DAEVerify</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>31</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DAE_Codeload</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>32</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>Codeload</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>33</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DriveFirmwareUpdate</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>34</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>FullDiscovery</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>35</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CreateJustOneHardwareXML</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>36</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>Aux_Enclosure_Diag</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>37</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PowerCableSwap</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>38</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>Argonaut_Enclosure_Diag</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>39</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SystemBEVerify</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>40</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>FEOpticalCableVerify</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>41</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>NestVerify</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>42</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ParseDiscovery</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>43</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GetGenealogy_Nested</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>44</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ParseGenealogy_Nested</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>45</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GeneDiscConfigCheck_Nested</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>46</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PstDscvr_AceGeneCfgChk</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>47</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>AceDiscConfigCheck</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>48</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>GoodsIssueMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>49</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>Check4OpenIncid_PostDiags</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>50</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ReturnEnclosureIDs</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>51</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SoftResetFromPlatypus</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>52</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PlatypusICADeregisterMAC</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>53</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>FlshFwRevChk_OsRevAB</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>54</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>DwnLdTftp_AllOsFwRevsAB</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>55</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>UpdateDMEFrmWrBiosAB</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>56</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>UpdateDMEFrmWrPostAB</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>57</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>UpdateDMEFrmWrFwBundleAB</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>58</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SetSPGmtTimePost</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>59</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SetNaviSrvcUUTIPs</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>60</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SyncICA</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>61</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>Copy.ICA.ICA.Conf</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>62</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ICA_RestartPoint</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>63</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>ValidateImage</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>64</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>ResetPwrCyclVar_PreICA</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>65</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>MonPwrUp_PreICA_115200</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>66</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>InitLAN</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>67</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrDwnDMEsPreICA</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>68</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>ICA</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>69</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PwrOff</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>70</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>LoadVaultPack_MSG</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>71</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrCycleBE_Flare</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>72</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>CLB_LetOSBootUp</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>73</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>CLB_ArbSetTstIPs</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>74</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>CLB_SetSysTstIPs</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>75</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>CLB_ReleaseIPArb</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>76</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CLB_IpSetCompSync</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>77</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>Wait4FlareGetAgent</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>78</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CheckAgentA_Initial</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>79</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>CheckAgentB_Initial</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>80</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SPSAReady</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>81</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>x8PortPersistChk</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>82</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GetResumeA</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>83</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GetCrusA</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>84</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>WG_SetupScript</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>85</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>WG_RaidVerify</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>86</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SPSAReady_1</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>87</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ChkWrtCacheEnabled</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>88</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SaveSOData</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>89</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GetFELogPorts</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>90</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>VerifyFASTVP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>91</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>NDUBlockEnabler</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>92</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>NDUFileOE</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>93</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>NDUFileEnabler</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>94</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CheckLogOneA1</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>95</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CheckLogOneB1</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>96</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>GetHostAgentFiles1</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>97</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CheckLogClearAB_Final</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>98</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SetCBEncryption</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>99</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ThorBinding</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>100</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>VNXFSetup</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>101</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ChkHostAgentBlockEOT</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>102</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>BackGndDisable</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>103</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ResetIP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>104</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>FileVarsInit_Initial</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>105</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>EnableAA</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>106</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>FILE_WIRING_MSG</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>107</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>FileRestartPointPrimary</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>108</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOffPriCS_PreFileInstall</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>109</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOffSecCS_PreFileInstall</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>110</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>FileVarsInit_Retry</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>111</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOffPriCSDMEs_RestartPNP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>112</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOffSecCS_RestartPNP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>113</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SC.Off_RestartPNP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>114</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SG.Enable_RestartPNP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>115</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>UninstlFileEna_RestartPNP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>116</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>AutoAttachEna_RestartPNP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>117</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>NDUFileOE_RestartPNP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>118</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOffPriCSDMEs</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>119</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SetPrimary</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>120</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOnPriCS</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>121</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOnSecCS</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>122</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PriSecLoadMessPNP</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>123</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOffPriCS</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>124</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOffSecCS</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>125</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PNPInstall</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>126</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>VerifyAADisabled</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>127</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>FibreCableChecks</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>128</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SetUBSEEnablers</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>129</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PrimaryEnclosureStatus</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>130</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>EncStatLoop</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>131</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PrimaryProbeSys</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>132</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PrimaryCheckCable</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>133</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PrimaryDmiDecode</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>134</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SecondaryEnclosureStatus</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>135</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>SecondaryProbeSys</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>136</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SecondaryCheckCable</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>137</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SecondaryDmiDecode</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>138</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>StopEncLoop</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>139</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CsMgmtIfup</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>140</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SaveNasInfo</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>141</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SetCBEncryptionUnified</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>142</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLmCopyToolsFile</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>143</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLmMgmtPortIfDown</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>144</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLmReconnectCableMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>145</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>DLmRemCableCheck_Sec</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>146</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>DLmInitSetup</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>147</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLmSetupScript</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>148</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLmInitVTEC</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>149</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLm4OneVTECableMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>150</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLm4TwoVTECableMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>151</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>VTE1PwrMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>152</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>VTE1DLm4MonitorPwrUp</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>153</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>VTE1CopyFiles</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>154</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>VTE1DLm4Config</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>155</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CheckFw1GSw1</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>156</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>CfgFileDLm4Load1GSw1</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>157</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SetCfg1GSw1</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>158</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>VTE2PwrMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>159</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>VTE2DLm4SwInit</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>160</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLm4ChangeFcId</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>161</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLm4HaStatus</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>162</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>DLm4FinalTest</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>163</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>DLm4ShutdownVTEs</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>164</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PwrOff1GSw1</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>165</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ChkHostAgentUnifEOT</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>166</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>NasHalt</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>167</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>BackGndDisable</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>168</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PwrOffPriCS_AfterFileInstall</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>169</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PwrOffSecCS_AfterFileInstall</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>170</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PwrOff_AfterFileInstall</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>171</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>GetGenealogy_SOData</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>172</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>SaveSODataGene</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>173</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrOffPriCSDMEs_AfterFileInstall</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>174</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>CSPwrReCblMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>175</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>TurnUUTBPwrOff</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>176</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>RstPwrCyclVar_CS0Chk</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>177</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrBChkCS0on1off</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>178</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrDwnBSide</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>179</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>TurnUUTAPwrOff</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>180</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>RstPwrCyclVar_CS1Chk</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>181</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrAChkCS1on0off</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>182</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>PwrDwnASide</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>183</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PrintCSLabel</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>184</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GetCSLabelMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>185</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PrintLoosePairLabel</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>186</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>GetLoosePairLabelMsg</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>187</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ResetPwrCyclVar_EndOfTest</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>188</Index><RestartPoint>false</RestartPoint><RestartEnabled>false</RestartEnabled><Name>MonPwrUpAllENCL_ClrDMI_EndOfTest</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>189</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>PwrOff</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>190</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>Check4OpenIncid_Final</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>191</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ClnUpHostAgntFilesEOT</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>192</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ClearSyncData</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>193</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>ClearUutIdConfigs</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus><SequencerStepStatus><Index>194</Index><RestartPoint>true</RestartPoint><RestartEnabled>true</RestartEnabled><Name>FCMAT_Rockies_Rev_50</Name><Duration /><Status><FontBold>false</FontBold><FontItalic>false</FontItalic><BackgroundColor /><ForegroundColor /></Status><Iteration>0</Iteration><StartTime>0001-01-01T00:00:00</StartTime><EndTime>0001-01-01T00:00:00</EndTime></SequencerStepStatus></ArrayOfSequencerStepStatus><RunContext><List><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>1</int>
+<int>1</int>
+<long>138281250</long>
+<dateTime>2015-10-24T07:15:59.03125+01:00</dateTime>
+<dateTime>2015-10-24T07:16:12.859375+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="SetupForSync">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:05:30</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\Sync.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.Sync.mm) (-var0:)(SET) (-uut:)(UUT)($uutnum) (-cap:)(Running Sync Command for UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>2</int>
+<int>1</int>
+<long>103906250</long>
+<dateTime>2015-10-24T07:16:13.15625+01:00</dateTime>
+<dateTime>2015-10-24T07:16:23.546875+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="InitTestLocation">
+  <EstTime>00:00:30</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.GetTestLoc.mm) (-var0:)($JO_UutWorkingDirectory)(\bin\ape.ini) (-var1:)(LOGIN) (-var2:)($login_location) (-var3:)(Testloc) (-var4:)($JO_UutWorkingDirectory) (-FILE:)($dir_datalogs)($uutnum)(\InitTestLoc.txt) (-cap:)(Determining test location UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>3</int>
+<int>1</int>
+<long>1354062500</long>
+<dateTime>2015-10-24T07:16:23.828125+01:00</dateTime>
+<dateTime>2015-10-24T07:18:39.234375+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="RockiesLogin_Msg">
+  <EstTime>00:10:00</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\RockiesLogin_Msg.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\RockiesLogin.mm) (-uut:)($uutnum) (-var0:)(FC) (-cap:Rockies FCMAT Login Scan) (-var1:)($TestLoc) (-var2:)(ROCKIES) (-var5:)($jo_so_number)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>4</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="CheckVaultPack_MSG">
+  <EstTime>00:01:30</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="MSG.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-msg:)('Ensure the Vault Drives are NOT SEATED in the first four slots: 0 1 2 3.') (-Btn1:)(Vault Unseated/Pass) (-Btn2:)(Cancel/Fail) (-hide:)(Btn2) (-file:)($dir_datalogs)($uutnum)(\CheckVaultPack.txt) (-Style:Info) (-uut:)($uutnum) (-color:5) (-pos:)(6) (-nodb)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>5</int>
+<int>1</int>
+<long>307343750</long>
+<dateTime>2015-10-24T07:18:39.546875+01:00</dateTime>
+<dateTime>2015-10-24T07:19:10.28125+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="GetACE">
+  <EstTime>00:02:00</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:'C:\Tester\Controls\ConsoleRedirector\ConsoleProxy.exe -target:cmd.exe -host:localhost') (-h) (-uut:)($uutnum) (-file:)($dir_datalogs)($uutnum)(\GetACE.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.GetACE.mm)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>6</int>
+<int>1</int>
+<long>113125000</long>
+<dateTime>2015-10-24T07:19:10.578125+01:00</dateTime>
+<dateTime>2015-10-24T07:19:21.890625+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="ParseACE">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:15:30</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\ParseACE.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.FC.SystemParser.mm) (-var0:)(ACE) (-uut:)(UUT)($uutnum) (-cap:)(Parsing the ACE file for UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>7</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SPSOnMsg">
+  <EstTime>00:10:30</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="MSG.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-msg:)('Please Turn on SPSs.') (-Btn1:)(SPSs are ON/Pass) (-Btn2:)(SPSs Failed/Fail) (-hide:)(Btn2) (-file:)($dir_datalogs)($uutnum)(\SPSOnMsg.txt) (-validate) (-uut:)($uutnum) (-color:5) (-pos:)(5) (-nodb)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>8</int>
+<int>1</int>
+<long>262812500</long>
+<dateTime>2015-10-24T07:19:22.203125+01:00</dateTime>
+<dateTime>2015-10-24T07:19:48.484375+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="SendTLA_GetGenealogy">
+  <EstTime>00:02:00</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="SendTlaModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) (-serialNumber:)($SysTLA) (-partNumber:)($TLAPN) (-slot:0_0_0_0) (-type:PRODUCT DOGTAG)</Arg>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:'C:\Tester\Controls\ConsoleRedirector\ConsoleProxy.exe -target:cmd.exe -host:localhost') (-h) (-uut:)($uutnum) (-file:)($dir_datalogs)($uutnum)(\GetGenealogy_UnNested.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.GetGenealogy.mm) (-var0:)($SysTLA)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>9</int>
+<int>1</int>
+<long>116562500</long>
+<dateTime>2015-10-24T07:19:48.8125+01:00</dateTime>
+<dateTime>2015-10-24T07:20:00.46875+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="ParseGenealogy_UnNested">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:15:30</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\ParseGenealogy_UnNested.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.FC.SystemParser.mm) (-var0:)(GENEALOGY) (-uut:)(UUT)($uutnum) (-cap:)(Parsing the GENEALOGY file for UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>10</int>
+<int>1</int>
+<long>420312500</long>
+<dateTime>2015-10-24T07:20:00.75+01:00</dateTime>
+<dateTime>2015-10-24T07:20:42.78125+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="LoginUpdate">
+  <EstTime>00:00:30</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\UpdateLoginInfo.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.AutoLoginDataCollect.mm) (-var0:)(ROCKIESSO) (-uut:)($uutnum) (-cap:)(Updating Login Info UUT)($uutnum) (-var0:)($TestLoc)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>11</int>
+<int>1</int>
+<long>152187500</long>
+<dateTime>2015-10-24T07:20:43.09375+01:00</dateTime>
+<dateTime>2015-10-24T07:20:58.3125+01:00</dateTime>
+<TestExecStatus>Finished</TestExecStatus>
+<TestStep Name="AceGeneConfigCheck">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-app:)(cmd.exe) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.CheckConfig.mm) (-CAP:)([UUT)($uutnum)(] Checking Configuration Ace vs Genealogy...) (-FILE:)($dir_datalogs)($uutnum)(\CheckConfigGeneAce.txt) (-var0:GeneAce) (-var1:)($psnt)</Arg>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>12</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="x8CableMsg">
+  <EstTime>00:10:30</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="MSG.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-msg:)('Ensure that all Moonlight SLICs are cabled with x8 cables so they are persisted correctly.') (-Btn1:)(Cabled x8/Pass) (-Btn2:)(SPSs Failed/Fail) (-hide:)(Btn2) (-file:)($dir_datalogs)($uutnum)(\x8CableMsg.txt) (-validate) (-uut:)($uutnum) (-color:5) (-pos:)(5) (-nodb)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>13</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="ConfigPower">
+  <EstTime>00:00:30</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\PowerConfig.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.FC.PowerConfig.mm) (-uut:)($uutnum) (-VAR0:)(UUT)($uutnum) (-var1:)(Register) (-cap:)(UUT)($uutnum)( Power Config)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>14</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="RockiesInitVars">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:05:30</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-app:)(cmd.exe) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.ModelingVars.mm) (-CAP:)(Initializing UUT)($uutnum)( Unified Variables) (-var0:)(UUT)($uutnum) (-var1:)($TPC_Defcon_Level) (-var2:)(ICAEnablers) (-FILE:)($dir_datalogs)($uutnum)(\RockiesInitVars.txt)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>15</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SetUutIdConfigs">
+  <EstTime>00:03:00</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\SetUutIdConfigs.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetUutIdConfigs.mm) (-uut:)($uutnum) (-cap:Set UUT Reg Settings)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>16</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="ChkUBSEEnablers">
+  <EstTime>00:05:00</EstTime>
+  <TimeOut>00:15:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\ChkUBSEEnablers.txt) (-uut:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ChkNASUBSEEnablers.mm) (-cap:)(UUT)($uutnum)( Checking for FILE UBSE Enablers)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>17</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="PwrOffPriCS">
+  <EstTime>00:01:00</EstTime>
+  <TimeOut>00:15:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.FC.PowerControl.mm) (-cap:)(UUT)($uutnum)( Power Cycling System) (-FILE:)($dir_datalogs)($uutnum)(\PwrPriCS.txt) (-var0:)(UUT)($uutnum) (-var1:Off) (-var2:CS1)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>18</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="PwrOffSecCS">
+  <EstTime>00:01:00</EstTime>
+  <TimeOut>00:05:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.FC.PowerControl.mm) (-cap:)(UUT)($uutnum)( Power Cycling System) (-FILE:)($dir_datalogs)($uutnum)(\PwrPriCS.txt) (-var0:)(UUT)($uutnum) (-var1:Off) (-var2:CS2)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>19</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="ResetPwrCyclVar_RokDiags">
+  <EstTime>00:03:00</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.ResetPwrCycleVar.mm) (-FILE:)($dir_datalogs)($uutnum)(\ResetPwrCyclVar_RokDiags.txt) (-var0:)(UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>20</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="MonPwrUp_ClrDMI_PreDiags_115200">
+  <EstTime>00:40:00</EstTime>
+  <TimeOut>00:59:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.FC.PowerControl.mm) (-cap:)(UUT)($uutnum)( Power Cycling System) (-FILE:)($dir_datalogs)($uutnum)(\PowerOn_PreDiags115200.txt) (-var0:)(UUT)($uutnum) (-var1:Boot) (-var2:AllXpeChas) (-var5:Initial)</Arg>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($coma1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:AUX) (-var1:ClrDMI) (-var2:)(SPA) (-baud )(115200) (-cap:)(UUT)($uutnum)( Monitor PwrUp BE1 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpBE1A_Initial.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($comb1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:AUX) (-var1:ClrDMI) (-var2:)(SPB) (-baud )(115200) (-cap:)(UUT)($uutnum)( Monitor PwrUp BE1 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpBE1B_Initial.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME1A_PreDiags115200.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME1B_PreDiags115200.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME2A_PreDiags115200.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME2B_PreDiags115200.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME3A_PreDiags115200.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME3B_Initial.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME4 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME4A_PreDiags115200.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME4 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME4B_PreDiags115200.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>21</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="GetMacAddresses">
+  <EstTime>00:30:00</EstTime>
+  <TimeOut>00:40:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($coma1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:AUX) (-var1:)(A) (-baud )($AuxBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp BE1 SPA) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressBE1A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($comb1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:AUX) (-var1:)(B) (-baud )($AuxBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp BE1 SPB) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressBE1B.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:DME) (-var1:)(A) (-var2:DME0) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressDME1A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:DME) (-var1:)(B) (-var2:DME0) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressDME1B.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:DME) (-var1:)(A) (-var2:DME1) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressDME2A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:DME) (-var1:)(B) (-var2:DME1) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressDME2B.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:DME) (-var1:)(A) (-var2:DME2) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressDME3A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:DME) (-var1:)(B) (-var2:DME2) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressDME3B.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:DME) (-var1:)(A) (-var2:DME3) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME4 SPA) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressDME4A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GetMACAddx.mm) (-var0:DME) (-var1:)(B) (-var2:DME3) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME4 SPB) (-file:)($dir_datalogs)($uutnum)(\GetMacAddressDME4B.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>22</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="ResumeWrite">
+  <EstTime>00:15:00</EstTime>
+  <TimeOut>00:40:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($coma1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:3) (-var3:AUX) (-var5:WriteResume) (-var6:A) (-baud )($AuxBaudRt) (-cap:)(UUT)($uutnum)( BE1 SPA Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteBE1A.txt)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($comb1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPB) (-var1:)(E3) (-var2:3) (-var3:AUX) (-var5:WriteResume) (-var6:B) (-baud )($AuxBaudRt) (-cap:)(UUT)($uutnum)( BE1 SPB Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteBE1B.txt)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:3) (-var3:DME) (-var5:WriteResume) (-var6:A) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( DME1 SPA Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteDME1A.txt)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPB) (-var1:)(E3) (-var2:3) (-var3:DME) (-var5:WriteResume) (-var6:B) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( DME1 SPB Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteDME1B.txt)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:4) (-var3:DME) (-var5:WriteResume) (-var6:A) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( DME2 SPA Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteDME2A.txt)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPB) (-var1:)(E3) (-var2:4) (-var3:DME) (-var5:WriteResume) (-var6:B) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( DME2 SPB Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteDME2B.txt)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:5) (-var3:DME) (-var5:WriteResume) (-var6:A) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( DME3 SPA Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteDME3A.txt)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPB) (-var1:)(E3) (-var2:5) (-var3:DME) (-var5:WriteResume) (-var6:B) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( DME3 SPB Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteDME3B.txt)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:6) (-var3:DME) (-var5:WriteResume) (-var6:A) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( DME4 SPA Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteDME4A.txt)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.ResumeWrite.mm) (-var0:)(SPB) (-var1:)(E3) (-var2:6) (-var3:DME) (-var5:WriteResume) (-var6:B) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( DME4 SPB Resume Write) (-FILE:)($dir_datalogs)($uutnum)(\ResumeWriteDME4B.txt)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>23</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SyncCopyICAPlatty">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\Sync.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.Sync.mm) (-var0:)(PLT) (-uut:)(UUT)($uutnum) (-cap:)(Running Sync Command for UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>24</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="Copy.ICA.Platty.Conf">
+  <EstTime>00:01:00</EstTime>
+  <TimeOut>00:05:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-app:)(cmd.exe) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.CopyICA.ConfFile.mm) (-VAR0:)(PLATTY) (-CAP:)(Retrieving ICA.Conf Plattypus File UUT)($uutnum) (-FILE:)($dir_datalogs)($uutnum)(\Copy.ICA.Platty.Conf.txt)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>25</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SetEnclSysType_Post">
+  <EstTime>00:15:00</EstTime>
+  <TimeOut>00:40:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($coma1) (-UUT:)(UUT)($uutnum) (-baud:115200) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.SetE3Mode.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:)(AUX) (-var3:)($AuxChassisID) (-cap:)(Set E3 Mode UUT)($uutnum) (-FILE:)($dir_datalogs)($uutnum)(\Rc.SetE3ModeAuxA.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1A) (-UUT:)(UUT)($uutnum) (-baud:9600) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.SetE3Mode.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:)(DME) (-var3:)(3) (-cap:)(Set E3 Mode UUT)($uutnum) (-FILE:)($dir_datalogs)($uutnum)(\Rc.SetE3ModeBE0A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2A) (-UUT:)(UUT)($uutnum) (-baud:9600) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.SetE3Mode.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:)(DME) (-var3:)(4) (-cap:)(Set E3 Mode UUT)($uutnum) (-FILE:)($dir_datalogs)($uutnum)(\Rc.SetE3ModeBE1A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3A) (-UUT:)(UUT)($uutnum) (-baud:9600) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.SetE3Mode.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:)(DME) (-var3:)(5) (-cap:)(Set E3 Mode UUT)($uutnum) (-FILE:)($dir_datalogs)($uutnum)(\Rc.SetE3ModeBE2A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4A) (-UUT:)(UUT)($uutnum) (-baud:9600) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.SetE3Mode.mm) (-var0:)(SPA) (-var1:)(E3) (-var2:)(DME) (-var3:)(6) (-cap:)(Set E3 Mode UUT)($uutnum) (-FILE:)($dir_datalogs)($uutnum)(\Rc.SetE3ModeBE3A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>26</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="PlatypusICARegisterMAC">
+  <EstTime>00:01:30</EstTime>
+  <TimeOut>00:15:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(AUX_A) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationAuxA.txt) (-cap:)(Registering Aux A MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(AUX_B) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationAuxB.txt) (-cap:)(Registering Aux B MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME0_A) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME0A.txt) (-cap:)(Registering DME0 A MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME0_B) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME0B.txt) (-cap:)(Registering DME0 B MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME1_A) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME1A.txt) (-cap:)(Registering DME1 A MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME1_B) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME1B.txt) (-cap:)(Registering DME1 B MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME2_A) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistratioDME2A.txt) (-cap:)(Registering DME2 A MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME2_B) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME2B.txt) (-cap:)(Registering DME2 B MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME3_A) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME3A.txt) (-cap:)(Registering DME3 A MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME3_B) (-VAR1:)(REGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME3B.txt) (-cap:)(Registering DME3 B MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>27</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="ResetPwrCyclVar_RokDiags">
+  <EstTime>00:03:00</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.ResetPwrCycleVar.mm) (-FILE:)($dir_datalogs)($uutnum)(\ResetPwrCyclVar_RokDiags.txt) (-var0:)(UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>28</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="MonPwrUp_Platypus_115200">
+  <EstTime>00:40:00</EstTime>
+  <TimeOut>00:59:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.FC.PowerControl.mm) (-cap:)(UUT)($uutnum)( Power Cycling System) (-FILE:)($dir_datalogs)($uutnum)(\PowerOn_PreDiags.txt) (-var0:)(UUT)($uutnum) (-var1:Boot) (-var2:AllXpeChas) (-var5:Initial)</Arg>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($coma1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:AUX) (-var1:ClrDMI) (-var2:)(SPA) (-var3:)(PLATYPUS) (-baud )(115200) (-cap:)(UUT)($uutnum)( Monitor Platypus PwrUp BE1 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpBE1A_Platypus.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($comb1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:AUX) (-var1:ClrDMI) (-var2:)(SPB) (-var3:)(PLATYPUS) (-baud )(115200) (-cap:)(UUT)($uutnum)( Monitor Platypus PwrUp BE1 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpBE1B_Platypus.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-var3:)(PLATYPUS) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME1A_Platypus.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-var3:)(PLATYPUS) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME1B_Platypus.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-var3:)(PLATYPUS) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME2A_Platypus.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-var3:)(PLATYPUS) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME2B_Platypus.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-var3:)(PLATYPUS) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME3A_Platypus.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-var3:)(PLATYPUS) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME3B_Platypus.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-var3:)(PLATYPUS) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME4 SPA) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME4A_Platypus.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-var3:)(PLATYPUS) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME4 SPB) (-file:)($dir_datalogs)($uutnum)(\PowerUpDME4B_Platypus.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>29</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="DAECountVerify">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>12:10:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname DAECountVerification )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>30</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="DAEVerify">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>12:10:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname DAEVerify )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>31</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="DAE_Codeload">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>12:10:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname DAE_Codeload )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>32</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="Codeload">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>05:00:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname Codeload )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>33</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="DriveFirmwareUpdate">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>12:10:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname DriveFirmwareUpdate )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>34</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="FullDiscovery">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>05:00:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname FullDiscovery )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>35</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="CreateJustOneHardwareXML">
+  <EstTime>00:01:00</EstTime>
+  <TimeOut>00:15:00</TimeOut>
+  <Exe Name="HardwareNestingModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -autonest)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>36</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="Aux_Enclosure_Diag">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>05:00:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname )($GATEModel)(_Enclosure_Diag )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>37</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="PowerCableSwap">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>05:00:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname PowerCableSwap )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>38</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="Argonaut_Enclosure_Diag">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>05:00:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname Argonaut_Enclosure_Diag )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>39</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SystemBEVerify">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>20:10:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname SystemBEVerify )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>40</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="FEOpticalCableVerify">
+  <EstTime>01:00:00</EstTime>
+  <TimeOut>05:00:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname FEOpticalCableVerify )( -pluginfilename )($pluginfilename)( -sequencefile )($sequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>41</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="NestVerify">
+  <EstTime>00:01:00</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="AutonestValidationModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>42</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="ParseDiscovery">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:20:30</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\ParseDiscovery.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.FC.SystemParser.mm) (-var0:)(DISCOVERY) (-uut:)(UUT)($uutnum) (-cap:)(Parsing the DISCOVERY file for UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>43</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="GetGenealogy_Nested">
+  <EstTime>00:02:00</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:'C:\Tester\Controls\ConsoleRedirector\ConsoleProxy.exe -target:cmd.exe -host:localhost') (-h) (-uut:)($uutnum) (-file:)($dir_datalogs)($uutnum)(\GetGenealogy_Nested_SNT.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.GetGenealogy.mm) (-var0:)($SysTLA)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>44</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="ParseGenealogy_Nested">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:15:30</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\ParseGenealogy_Nested.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.FC.SystemParser.mm) (-var0:)(GENEALOGY) (-uut:)(UUT)($uutnum) (-cap:)(Parsing the GENEALOGY file for UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>45</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="GeneDiscConfigCheck_Nested">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-app:)(cmd.exe) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.CheckConfig.mm) (-CAP:)([UUT)($uutnum)(] Checking Configuration Ace vs Genealogy...) (-FILE:)($dir_datalogs)($uutnum)(\GeneDiscConfigCheck_SNT.txt) (-var0:GeneDisc) (-var1:)($psnt)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>46</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="PstDscvr_AceGeneCfgChk">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-app:)(cmd.exe) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.CheckConfig.mm) (-CAP:)([UUT)($uutnum)(] Checking Configuration Ace vs Genealogy...) (-FILE:)($dir_datalogs)($uutnum)(\CheckConfigGeneAce.txt) (-var0:GeneAce) (-var1:)($psnt) (-var2:NESTED)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>47</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="AceDiscConfigCheck">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-app:)(cmd.exe) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Unf.CheckConfig.mm) (-CAP:)([UUT)($uutnum)(] Checking Configuration Ace vs Discovery...) (-FILE:)($dir_datalogs)($uutnum)(\CheckConfigAceDisc.txt) (-var0:ACEDisc) (-var1:)($psnt)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>48</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="GoodsIssueMsg">
+  <EstTime>00:05:30</EstTime>
+  <TimeOut>00:10:00</TimeOut>
+  <Exe Name="Multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.GoodsIssueMsg.mm) (-FILE:)($dir_datalogs)($uutnum)(\GoodsIssueMsg.txt) (-cap:)(Perform Goods Issued Message)</Arg>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>49</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="Check4OpenIncid_PostDiags">
+  <EstTime>00:05:00</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="CheckOpenIssuesModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) (-checkIL:)(true)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>50</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="ReturnEnclosureIDs">
+  <EstTime>00:15:00</EstTime>
+  <TimeOut>00:40:00</TimeOut>
+  <Exe Name="GateTestModule.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\diagtestapps)</WorkingDir>
+    <Arg>(-uutNum:)($uutnum) ( -uut )($uutnum)( -testname )($ReturnEnclIDVar)( -pluginfilename )($pluginfilename)( -sequencefile )($gstasequencefilename) (-disableseriallogging)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>51</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SoftResetFromPlatypus">
+  <EstTime>00:40:00</EstTime>
+  <TimeOut>00:59:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($coma1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:AUX) (-var1:ClrDMI) (-var2:)(SPA) (-var3:)(MFG2CLAR) (-var5:)(PLATTYSOFTRESET) (-baud )(115200) (-cap:)(UUT)($uutnum)( Monitor PwrUp BE1 SPA) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusBE1A.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($comb1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:AUX) (-var1:ClrDMI) (-var2:)(SPB) (-var3:)(MFG2CLAR) (-var5:)(PLATTYSOFTRESET) (-baud )(115200) (-cap:)(UUT)($uutnum)( Monitor PwrUp BE1 SPB) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusBE1B.txt) (-saveraw)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-var5:)(PLATTYSOFTRESET) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusDME1A.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME1B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-var5:)(PLATTYSOFTRESET) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusDME1B.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-var5:)(PLATTYSOFTRESET) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusDME2A.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME2B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-var5:)(PLATTYSOFTRESET) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusDME2B.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-var5:)(PLATTYSOFTRESET) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusDME3A.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME3B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-var5:)(PLATTYSOFTRESET) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusDME3B.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4A) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPA) (-var5:)(PLATTYSOFTRESET) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME4 SPA) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusDME4A.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($ComDME4B) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.PwUpMonitor.mm) (-var0:DME) (-var1:ClrDMI) (-var2:)(SPB) (-var5:)(PLATTYSOFTRESET) (-baud )($DMEBaudRt) ( -debug:noagdc ) (-cap:)(UUT)($uutnum)( Monitor PwrUp DME4 SPB) (-file:)($dir_datalogs)($uutnum)(\SoftResetFromPlatypusDME4B.txt) (-baud )($DMEBaudRt) (-saveraw)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>52</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="PlatypusICADeregisterMAC">
+  <EstTime>00:01:30</EstTime>
+  <TimeOut>00:15:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(AUX_A) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationAuxA.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(AUX_B) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationAuxB.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME0_A) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME0A.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME0_B) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME0B.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME1_A) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME1A.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME1_B) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME1B.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME2_A) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME2A.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME2_B) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME2B.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME3_A) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME3A.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) (-APP:cmd.exe) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rc.PlatypusIcaRegistration.mm) (-VAR0:)(DME3_B) (-VAR1:)(DEREGISTER) (-FILE:)($dir_datalogs)($uutnum)(\Rc.PlatypusIcaRegistrationDME3B.txt) (-cap:)(Registering MAC to ICA Platypus PXE Dir)($uutnum)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>53</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="FlshFwRevChk_OsRevAB">
+  <EstTime>00:15:00</EstTime>
+  <TimeOut>00:40:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($coma1) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPA) (-var1:)(AUX_OsRev) (-var2:AUX) (-baud )($AuxBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev AUX SPA) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpABEE1A.txt)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($comb1) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPB) (-var1:)(AUX_OsRev) (-var2:AUX) (-baud )($AuxBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev AUX SPB) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpABEE1B.txt)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPA) (-var1:)(DME_OsRev) (-var2:DME) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev DME0 SPA) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpADME1A.txt)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPB) (-var1:)(DME_OsRev) (-var2:DME) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev DME0 SPB) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpADME1B.txt)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPA) (-var1:)(DME_OsRev) (-var2:DME) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpADME2A.txt)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPB) (-var1:)(DME_OsRev) (-var2:DME) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpADME2B.txt)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPA) (-var1:)(DME_OsRev) (-var2:DME) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpADME3A.txt)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPB) (-var1:)(DME_OsRev) (-var2:DME) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpADME3B.txt)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPA) (-var1:)(DME_OsRev) (-var2:DME) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpADME4A.txt)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.FlshFwRevChk.mm) (-var0:)(SPB) (-var1:)(DME_OsRev) (-var2:DME) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(CheckFWRevs Os Rev DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\FlshFwRevChkSpADME4B.txt)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>54</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="DwnLdTftp_AllOsFwRevsAB">
+  <EstTime>00:30:00</EstTime>
+  <TimeOut>00:50:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($coma1) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPA) (-var2:)(AUX_OsRev) (-var3:)(Bios) (-var4:AUX) (-var5:ALL) (-baud )($AuxBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs AUX SPA) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsBEE1A.txt)</Arg>
+    <Condition>Equal($APP1,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($comb1) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPB) (-var2:)(AUX_OsRev) (-var3:)(Bios) (-var4:AUX) (-var5:ALL) (-baud )($AuxBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs AUX SPB) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsBEE1B.txt)</Arg>
+    <Condition>Equal($APP2,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPA) (-var2:)(DME_OsRev) (-var3:)(Bios) (-var4:DME) (-var5:ALL) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs DME0 SPA) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsDME1A.txt)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPB) (-var2:)(DME_OsRev) (-var3:)(Bios) (-var4:DME) (-var5:ALL) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs DME0 SPB) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsDME1B.txt)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPA) (-var2:)(DME_OsRev) (-var3:)(Bios) (-var4:DME) (-var5:ALL) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsDME2A.txt)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPB) (-var2:)(DME_OsRev) (-var3:)(Bios) (-var4:DME) (-var5:ALL) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsDME2B.txt)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPA) (-var2:)(DME_OsRev) (-var3:)(Bios) (-var4:DME) (-var5:ALL) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsDME3A.txt)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPB) (-var2:)(DME_OsRev) (-var3:)(Bios) (-var4:DME) (-var5:ALL) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsDME3B.txt)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPA) (-var2:)(DME_OsRev) (-var3:)(Bios) (-var4:DME) (-var5:ALL) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsDME4A.txt)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Roc.DwnLdTftp.mm) (-var1:)(SPB) (-var2:)(DME_OsRev) (-var3:)(Bios) (-var4:DME) (-var5:ALL) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(DownLd All Os Fw Revs DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\DownloadAllOsFwRevsDME4B.txt)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>55</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="UpdateDMEFrmWrBiosAB">
+  <EstTime>00:15:00</EstTime>
+  <TimeOut>00:40:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Bios) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Bios DME0 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrBiosDME1A.txt)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Bios) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Bios DME0 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrBiosDME1B.txt)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Bios) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Bios DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrBiosDME2A.txt)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Bios) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Bios DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrBiosDME2B.txt)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Bios) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Bios DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrBiosDME3A.txt)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Bios) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Bios DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrBiosDME3B.txt)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Bios) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Bios DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrBiosDME4A.txt)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Bios) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Bios DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrBiosDME4B.txt)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>56</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="UpdateDMEFrmWrPostAB">
+  <EstTime>00:15:00</EstTime>
+  <TimeOut>00:40:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Post) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Post DME0 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrPostDME1A.txt)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Post) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Post DME0 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrPostDME1B.txt)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Post) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Post DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrPostDME2A.txt)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Post) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Post DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrPostDME2B.txt)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Post) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Post DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrPostDME3A.txt)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Post) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Post DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrPostDME3B.txt)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Post) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Post DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrPostDME4A.txt)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(Post) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr Post DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrPostDME4B.txt)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>57</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="UpdateDMEFrmWrFwBundleAB">
+  <EstTime>00:15:00</EstTime>
+  <TimeOut>00:40:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(FwBun) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr FwBun DME0 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrFwBunDME1A.txt)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(FwBun) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr FwBun DME0 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrFwBunDME1B.txt)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(FwBun) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr FwBun DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrFwBunDME2A.txt)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(FwBun) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr FwBun DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrFwBunDME2B.txt)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(FwBun) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr FwBun DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrFwBunDME3A.txt)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(FwBun) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr FwBun DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrFwBunDME3B.txt)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4A) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(FwBun) (-var1:DME) (-var2:SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr FwBun DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrFwBunDME4A.txt)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4B) (-SCR:)($JO_UutWorkingDirectory)(\modules\\Unf.UpdateFrmWr.mm) (-var0:)(FwBun) (-var1:DME) (-var2:SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(UpdateFrmWr FwBun DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\UpdateFrmWrFwBunDME4B.txt)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>false</boolean>
+<boolean>false</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>58</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SetSPGmtTimePost">
+  <EstTime>00:15:00</EstTime>
+  <TimeOut>00:20:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($coma1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(AUX) (-var2:)(SPA) (-baud )($AuxBaudRt) (-cap:)(Setting SPA Time UUT)($uutnum) (-FILE:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostAUXA.txt) (-saveraw)</Arg>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) ($comb1) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(AUX) (-var2:)(SPB) (-baud )($AuxBaudRt) (-cap:)(Setting SPB Time UUT)($uutnum) (-FILE:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostAUXB.txt) (-saveraw)</Arg>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1A) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(DME) (-var2:)(SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(Setting SPB Time DME0 SPA) (-file:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostDME1A.txt)</Arg>
+    <Condition>Equal($APP3,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME1B) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(DME) (-var2:)(SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(Setting SPB Time DME0 SPB) (-file:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostDME1B.txt)</Arg>
+    <Condition>Equal($APP4,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2A) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(DME) (-var2:)(SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(Setting SPB Time DME1 SPA) (-file:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostDME2A.txt)</Arg>
+    <Condition>Equal($APP5,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME2B) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(DME) (-var2:)(SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(Setting SPB Time DME1 SPB) (-file:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostDME2B.txt)</Arg>
+    <Condition>Equal($APP6,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3A) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(DME) (-var2:)(SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(Setting SPB Time DME2 SPA) (-file:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostDME3A.txt)</Arg>
+    <Condition>Equal($APP7,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME3B) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(DME) (-var2:)(SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(Setting SPB Time DME2 SPB) (-file:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostDME3B.txt)</Arg>
+    <Condition>Equal($APP8,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4A) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(DME) (-var2:)(SPA) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(Setting SPB Time DME3 SPA) (-file:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostDME4A.txt)</Arg>
+    <Condition>Equal($APP9,true)</Condition>
+  </Exe>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-UUT:)(UUT)($uutnum) ($ComDME4B) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.SetSPTimePost.mm) (-var0:)(GMT) (-var1:)(DME) (-var2:)(SPB) (-baud )($DMEBaudRt) (-cap:)(UUT)($uutnum)(Setting SPB Time DME3 SPB) (-file:)($dir_datalogs)($uutnum)(\SetSPGmtTimePostDME4B.txt)</Arg>
+    <Condition>Equal($APP10,true)</Condition>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>59</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SetNaviSrvcUUTIPs">
+  <EstTime>00:01:00</EstTime>
+  <TimeOut>00:05:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-app:)(cmd.exe) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Rok.SetNaviServiceUUTIPs.mm) (-CAP:)(Setting Navi Agent Service IPs for all UUTs in test.) (-FILE:)($dir_datalogs)($uutnum)(\SetNaviSrvcUUTIPs.txt)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>60</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="SyncICA">
+  <EstTime>00:00:45</EstTime>
+  <TimeOut>00:00:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-app:cmd.exe) (-h) (-file:)($dir_datalogs)($uutnum)(\yncICA.txt) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.Sync.mm) (-var0:)(ICA) (-uut:)(UUT)($uutnum) (-cap:)(Clearingng Sync for UUT)($uutnum)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer><Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+<int>61</int>
+<int>0</int>
+<long>-9223372036854775808</long>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<dateTime>0001-01-01T00:00:00</dateTime>
+<TestExecStatus>Ready</TestExecStatus>
+<TestStep Name="Copy.ICA.ICA.Conf">
+  <EstTime>00:01:00</EstTime>
+  <TimeOut>00:05:00</TimeOut>
+  <Exe Name="multimon.exe">
+    <WorkingDirType>Argument</WorkingDirType>
+    <WorkingDir>($JO_UutWorkingDirectory)(\bin)</WorkingDir>
+    <Arg>(-h) (-app:)(cmd.exe) (-UUT:)(UUT)($uutnum) (-SCR:)($JO_UutWorkingDirectory)(\modules\Roc.CopyICA.ConfFile.mm) (-VAR0:)(ICA) (-CAP:)(Retrieving ICA.Conf ICAs File UUT)($UutNum)) (-FILE:)($dir_datalogs)($uutnum)(\Copy.ICA.ICA.Conf.txt)</Arg>
+  </Exe>
+</TestStep>
+<boolean>true</boolean>
+<boolean>true</boolean>
+</Emc.Mfg.Library.Sequencer.Sequencer.RunContext.StepRunningStatus-Emc.Mfg.Library.Sequencer>
+</List>
+</RunContext>
+</UUTState>
