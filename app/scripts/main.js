@@ -1,6 +1,7 @@
 'use strict';
 
 var xmlViewer = (function() {
+  var _appliedStyle = '';
   function _getXmlDOMFromString(xmlStr) {
     xmlStr = xmlStr.trim();
     if (window.ActiveXObject && window.GetObject) {
@@ -24,13 +25,13 @@ var xmlViewer = (function() {
   }
   function _getAttributes(node) {
     var attrHtml = "",
-    attrEquals = "<span class='attrEquals ff'>=</span>",
-    attrQuotes = '<span class="attrQuotes ff">"</span>';
+    attrEquals = "<span class='attrEquals "+_appliedStyle+"'>=</span>",
+    attrQuotes = '<span class="attrQuotes '+_appliedStyle+'">"</span>';
     if (!node.attributes) {
       return attrHtml;
     }
     $.each(node.attributes, function (index, value) {
-      attrHtml += "<span class='attrName ff'> "+value.nodeName + attrEquals+ '</span><span class="attrValue ff">'+ attrQuotes + value.nodeValue + attrQuotes + '</span> ';
+      attrHtml += "<span class='attrName "+_appliedStyle+"'> "+value.nodeName + attrEquals+ '</span><span class="attrValue '+_appliedStyle+'">'+ attrQuotes + value.nodeValue + attrQuotes + '</span> ';
     });
     return attrHtml;
   }
@@ -38,7 +39,7 @@ var xmlViewer = (function() {
     var nodeValue = "";
     if (node.firstChild && node.firstChild.nodeType === 3) {
       if (node.firstChild.nodeValue.trim()) {
-        nodeValue = node.firstChild.nodeValue;
+        nodeValue = "<span class='nodeValue "+_appliedStyle+"'>"+node.firstChild.nodeValue+"</span>";
       }
     }
     return nodeValue;
@@ -55,11 +56,11 @@ var xmlViewer = (function() {
     nodeValueHtml = _getNodeValue(node),
     childrenHtml = _getChildren(node),
     nodeHtml = "",
-    firstTagOpen = "<span class='tagBracket ff'>&lt</span>",
-    tagClose = "<span class='tagBracket ff'>&gt</span>",
-    secondTagOpen = "<span class='tagBracket ff'>&lt/</span>",
-    singleTagClose = "<span class='tagBracket ff'> /&gt</span>",
-    tagText = "<span class='tagName ff'>"+node.nodeName+"</span>",
+    firstTagOpen = "<span class='tagBracket "+_appliedStyle+"'>&lt</span>",
+    tagClose = "<span class='tagBracket "+_appliedStyle+"'>&gt</span>",
+    secondTagOpen = "<span class='tagBracket "+_appliedStyle+"'>&lt/</span>",
+    singleTagClose = "<span class='tagBracket "+_appliedStyle+"'> /&gt</span>",
+    tagText = "<span class='tagName "+_appliedStyle+"'>"+node.nodeName+"</span>",
     openTag = firstTagOpen + tagText + attrHtml +tagClose,
     closeTag = secondTagOpen + tagText + tagClose,
     singleTag = firstTagOpen + tagText + attrHtml + singleTagClose;
@@ -67,7 +68,7 @@ var xmlViewer = (function() {
     if (nodeValueHtml.length === 0 && childrenHtml.length === 0) {
       nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea'></div><span class='nodeName'>"+ singleTag + "</span></li>";
     } else {
-        nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea'></div><span class='nodeName'>" + openTag +"</span>" +"<span class='nodeValue ff'>" + nodeValueHtml + "</span>"+childrenHtml+"<span class='closeTag'>"+ closeTag + "</span></li>";
+        nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea "+_appliedStyle+"'></div><span class='nodeName'>" + openTag +"</span>" + nodeValueHtml +childrenHtml+"<span class='closeTag'>"+ closeTag + "</span></li>";
     }
 
     return nodeHtml;
@@ -84,6 +85,26 @@ var xmlViewer = (function() {
       }
     }
   }
+  function _changeTheme() {
+    // TODO: Get all elements matching tagBracket, tagName etc and change their class
+    if (_appliedStyle === '') {
+        _appliedStyle = "ff";
+    } else
+    if (_appliedStyle === 'ff') {
+      _appliedStyle = "chrome";
+    } else
+    if (_appliedStyle === "chrome") {
+      _appliedStyle = "dark";
+    } else
+    if (_appliedStyle === "dark") {
+      _appliedStyle = "";
+    }
+    $('#xmlTree').empty();
+    _self.redraw();
+  }
+  function _modifyStyle() {
+
+  }
 
   var _self = {
     xmlContent  : {},
@@ -97,6 +118,10 @@ var xmlViewer = (function() {
       .on("click", "div.hitarea", function () {
         _toggleNode.apply($(this).parent().get(0));
       });
+      $('#changeThemeBtn')
+      .on("click", function(){
+        _changeTheme();
+      });
     },
     renderHtmlTree: function () {
       var addListItem = function (curNode) {
@@ -107,6 +132,7 @@ var xmlViewer = (function() {
         if (curNode.nodeType === 1) {
           nodeHtml = _createNodeHtml(curNode);
           if (curNode.parentNode.nodeName === "#document") {
+            $("#xmlTree").append("<ul class='children treeview "+_appliedStyle+"'></ul>");
             $("ul.treeview").append(nodeHtml);
           } else {
             parentNodeName = curNode.parentNode.nodeName;
@@ -142,11 +168,17 @@ var xmlViewer = (function() {
       var xmlDoc = document.getElementById('xmlMsgDetails').innerHTML;
       _self.xmlContent = _getXmlDOMFromString(messageData);
       $('#xmlTree').append("<ul class='children treeview'></ul>");
+      _self.init();
+    },
+    init: function () {
       _self.renderHtmlTree();
       _self.assignClickHandlers();
+    },
+    redraw: function () {
+      _self.renderHtmlTree();
     }
   }
   return _self;
 }());
 
-xmlViewer.loadXmlFromFile('../res/newXml.xml', '.xmlTree', function(){xmlViewer.renderHtmlTree(); xmlViewer.assignClickHandlers();});
+xmlViewer.loadXmlFromFile('../res/anotherXml.xml', '.xmlTree', function(){xmlViewer.init();});

@@ -20,19 +20,19 @@
   </FcVarSets>
   <FcScriptEvents>
     <ScriptEvent Type="OnStart">
-      <SBlockItemList>
+      <SBlockItemList>Start
       </SBlockItemList>
     </ScriptEvent>
     <ScriptEvent Type="OnStop">
-      <SBlockItemList>
+      <SBlockItemList>Stop
       </SBlockItemList>
     </ScriptEvent>
     <ScriptEvent Type="OnComplete">
-      <SBlockItemList>
+      <SBlockItemList>Complete
       </SBlockItemList>
     </ScriptEvent>
     <ScriptEvent Type="Finally">
-      <SBlockItemList>
+      <SBlockItemList>Finally
       </SBlockItemList>
     </ScriptEvent>
   </FcScriptEvents>

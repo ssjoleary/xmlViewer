@@ -1,0 +1,97 @@
+.treeview div.hitarea {
+  height:16px;
+  width:16px;
+  margin-left:-16px;
+  display: inline-block;
+  cursor:pointer;
+  font-size: 7pt;
+}
+.treeview li {
+  list-style: none;
+}
+.treeview .nodeName {
+  cursor: pointer;
+}
+
+/* Chome XML Styles*/
+.treeview .chrome {
+  font-family: monospace;
+}
+.treeview span.tagBracket.chrome {
+  /*font-weight:250;*/
+  color: rgb(136, 18, 128);
+}
+.treeview span.tagName.chrome {
+  color: rgb(136, 18, 128);
+}
+.treeview span.attrName.chrome {
+  color: rgb(153, 69, 0);
+}
+.treeview span.attrValue.chrome {
+  color: rgb(26, 26, 166);
+}
+.treeview span.attrEquals.chrome {
+  color: rgb(136, 18, 128);
+}
+.treeview span.attrQuotes.chrome {
+  color: rgb(136, 18, 128);
+}
+.treeview div.hitarea.chrome{
+  font-family: "Glyphicons Halflings";
+}
+
+/* FireFox XML Styles*/
+.treeview .ff {
+  font-family: serif;
+}
+.treeview span.tagBracket.ff{
+  font-weight:250;
+}
+.treeview span.tagName.ff{
+  color: purple;
+  font-weight: bold;
+}
+.treeview span.attrName.ff {
+  font-weight: bold;
+}
+.treeview span.attrValue.ff {
+  color: blue;
+}
+.treeview span.attrEquals.ff{
+  color: blue;
+}
+.treeview span.attrQuotes.ff{
+  color: blue;
+}
+.treeview div.hitarea.ff{
+  font-family: "Glyphicons Halflings";
+}
+
+/* Dark Theme*/
+ul.children.treeview.dark{
+  background-color: hsl(220, 13%, 18%);
+}
+.treeview span.nodeValue.dark {
+  color: hsl(220, 14%, 71%);
+}
+.treeview span.tagBracket.dark{
+  color: hsl(220, 14%, 71%);
+}
+.treeview span.tagName.dark{
+  color: hsl(355, 65%, 65%);
+}
+.treeview span.attrName.dark {
+  color: hsl( 29, 54%, 61%);
+}
+.treeview span.attrValue.dark {
+  color: hsl( 95, 38%, 62%);
+}
+.treeview span.attrEquals.dark{
+  color: hsl(220, 14%, 71%);
+}
+.treeview span.attrQuotes.dark{
+  color: hsl( 95, 38%, 62%);
+}
+.treeview div.hitarea.dark{
+  color: hsl(220, 14%, 71%);
+}
