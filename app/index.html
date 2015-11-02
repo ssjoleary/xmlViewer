@@ -40,14 +40,12 @@
     <h3 class="text-muted">xmlViewer</h3>
   </div>
 
-
   <div class="row">
-    <button type="button" class="btn btn-default" id="changeThemeBtn">
-      Change Theme
-    </button>
-    <div class="row" id="xmlTree">
 
-    </div>
+  <div class="row" style="text-align: center;">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#xmlModal">
+      Show Modal
+    </button>
   </div>
 
   <div style="margin-top: 10px;">
@@ -94,10 +92,110 @@
   </div>
 
   <div class="footer">
-    <p>xmlViewer ssjoleary 2015</p>
+    <p>xmlViewer 2015</p>
   </div>
 </div>
 
+<div class="modal fade" id="xmlModal" tabindex="-1" role="dialog" aria-labelledby="XMLModal">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="xmlModalTitle">XML Viewer</h4>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-default btn-xs" style="float: right;" id="settingsBtn">Settings <span class="glyphicon glyphicon-cog"></span></button>
+        <div id="settings-tab" style="display: none;">
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div id="xmlTree-settings" style="">
+                    <div class="children treeview">
+                      <div class="root-node collapsible">
+                        <div class="hitarea glyphicon glyphicon-minus"></div>
+                        <span class="nodeName">
+                          <span class="tagBracket ">&lt;</span>
+                          <span class="tagName">root-node</span>
+                          <span class="tagBracket ">&gt;</span>
+                        </span>
+                        <div class="node-children">
+                          <div class="node collapsible">
+                            <div class="hitarea glyphicon glyphicon-minus"></div>
+                            <span class="nodeName">
+                              <span class="tagBracket">&lt;</span>
+                              <span class="tagName">node</span>
+                              <span class="attrName "> attributes
+                                <span class="attrEquals ">=</span>
+                              </span>
+                              <span class="attrValue ">
+                                <span class="attrQuotes ">"</span>
+                                attribute-values
+                                <span class="attrQuotes ">"</span>
+                              </span>
+                              <span class="tagBracket ">&gt;</span>
+                            </span>
+                            <div class="node-grandchildren">
+                              <div class="node child-node">
+                                <div class="hitarea"></div>
+                                <span class="nodeName">
+                                  <span class="tagBracket">&lt;</span>
+                                  <span class="tagName">child-node</span>
+                                  <span class="tagBracket">&gt;</span>
+                                </span>
+                                <span class="nodeValue">node-value</span>
+                                <span class="closeTag">
+                                  <span class="tagBracket">&lt;/</span>
+                                  <span class="tagName">child-node</span>
+                                  <span class="tagBracket">&gt;</span>
+                                </span>
+                              </div>
+                            </div>
+                            <span class="closeTag">
+                              <span class="tagBracket">&lt;/</span>
+                              <span class="tagName">node</span>
+                              <span class="tagBracket">&gt;</span>
+                            </span>
+                          </div>
+                        </div>
+                        <span class="closeTag">
+                          <span class="tagBracket ">&lt;/</span>
+                          <span class="tagName ">root-node</span>
+                          <span class="tagBracket ">&gt;</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-2">
+              <span style=""><strong>Theme: </strong></span>
+            </div>
+            <div class="col-md-5">
+              <div class="btn-group" role="group" id="settings-theme-btns">
+                <button type="button" class="btn btn-default theme-btn" value="ie">IE</button>
+                <button type="button" class="btn btn-default theme-btn" value="chrome">Chrome</button>
+                <button type="button" class="btn btn-default theme-btn" value="ff">FireFox</button>
+                <button type="button" class="btn btn-default theme-btn" value="dark">Dark</button>
+                <button type="button" class="btn btn-default theme-btn" value="">No Theme</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <span style="">Current: </span>
+              <span id="settings-current-theme"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="xmlTree">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
