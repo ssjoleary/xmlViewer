@@ -2,7 +2,8 @@
 
 var xmlViewer = (function() {
   var _appliedStyle = '',
-  _newStyle = '';
+  _newStyle = '',
+  _tempStyle = '';
 
   function _getXmlDOMFromString(xmlStr) {
     xmlStr = xmlStr.trim();
@@ -87,13 +88,7 @@ var xmlViewer = (function() {
       }
     }
   }
-  function _changeTheme() {
-    var newStyle = 'ff',
-    xmlTree = '#xmlTree';
-
-    _applyTheme(xmlTree, _newStyle);
-  }
-  function _applyTheme(xmlTree, newStyle){
+  function _applyTheme(xmlTree, newStyle, oldStyle){
     var nodeValueElements = $(xmlTree).find('.treeview span.nodeValue'),
     tagBracketElements = $(xmlTree).find('.treeview span.tagBracket'),
     tagNameElements = $(xmlTree).find('.treeview span.tagName'),
@@ -104,12 +99,23 @@ var xmlViewer = (function() {
     hitareaElements = $(xmlTree).find('.treeview div.hitarea'),
     elementsArray = [nodeValueElements, tagBracketElements, tagNameElements, attrNameElements, attrValueElements, attrEqualsElements, attrQuotesElements, hitareaElements];
 
-    $(xmlTree).removeClass(_appliedStyle).addClass(newStyle);
+    $(xmlTree).removeClass(oldStyle).addClass(newStyle);
     $.each(elementsArray, function (arrayIndex, array) {
       $.each(array, function(index, value){
-        $(value).removeClass(_appliedStyle).addClass(newStyle);
+        $(value).removeClass(oldStyle).addClass(newStyle);
       });
     });
+  }
+  function _toggleSettingsView() {
+    $('#xmlTree').toggle();
+    $('#settings-tab').toggle();
+    $('#settingsBtn').toggle();
+    $('#settingsFooter').toggle();
+  }
+  function _getCookies() {
+    if (Cookies.get('theme')) {
+      _appliedStyle = Cookies.get('theme');
+    }
   }
 
   var _self = {
@@ -134,24 +140,42 @@ var xmlViewer = (function() {
         _toggleNode.apply($(this).parent().get(0));
       });
 
-      $('#changeThemeBtn')
-      .on("click", function(){
-        _changeTheme();
-      });
-
       $('#settingsBtn')
       .on("click", function(){
         $('#settings-current-theme').text(_self.themes[_appliedStyle]);
-        $('#xmlTree').toggle();
-        $('#settings-tab').toggle();
+        $('#settings-preview-theme').text(_self.themes[_appliedStyle]);
+        _applyTheme("#xmlTree-settings", _appliedStyle, _tempStyle);
+        _tempStyle = _appliedStyle;
+        _toggleSettingsView();
       });
+
+      $('#settingsBackBtn')
+      .on("click", function () {
+        _toggleSettingsView();
+      })
 
       $('#settings-theme-btns>button.theme-btn')
       .on("click", function(){
         _newStyle = $(this).get(0).value;
-        _applyTheme("#xmlTree-settings", _newStyle);
+        _applyTheme("#xmlTree-settings", _newStyle, _tempStyle);
+        _tempStyle = _newStyle;
+        $('#settings-preview-theme').text(_self.themes[_tempStyle]);
         $('#settings-current-theme').text(_self.themes[_appliedStyle]);
       });
+
+      $('#settingsSaveBtn')
+      .on("click", function(){
+        _applyTheme("#xmlTree", _tempStyle, _appliedStyle);
+        _appliedStyle = _tempStyle;
+        $('#settings-current-theme').text(_self.themes[_appliedStyle]);
+        Cookies.set('theme', _appliedStyle);
+      });
+    },
+    resetView: function () {
+      $('#xmlTree').show();
+      $('#settingsBtn').show();
+      $('#settings-tab').hide();
+      $('#settingsFooter').hide();
     },
     renderHtmlTree: function (xmlTree) {
       var addListItem = function (curNode) {
@@ -208,6 +232,7 @@ var xmlViewer = (function() {
     },
     draw: function (xmlTree) {
       $(xmlTree).empty();
+      _getCookies();
       _self.renderHtmlTree(xmlTree);
       _applyTheme(xmlTree, _appliedStyle);
     }
@@ -217,4 +242,8 @@ var xmlViewer = (function() {
 
 $('#xmlModal').on('shown.bs.modal', function () {
   xmlViewer.loadXmlFromFile('../res/newXml.xml', '#xmlTree', function(){xmlViewer.init('#xmlTree');});
-})
+});
+
+$('#xmlModal').on('hidden.bs.modal', function () {
+  xmlViewer.resetView();
+});

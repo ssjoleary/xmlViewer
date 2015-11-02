@@ -42,7 +42,7 @@
 
   <div class="row">
 
-  <div class="row" style="text-align: center;">
+  <div class="jumbotron" style="text-align: center;">
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#xmlModal">
       Show Modal
     </button>
@@ -107,7 +107,14 @@
         <button type="button" class="btn btn-default btn-xs" style="float: right;" id="settingsBtn">Settings <span class="glyphicon glyphicon-cog"></span></button>
         <div id="settings-tab" style="display: none;">
           <div class="row">
-            <div class="col-md-offset-3 col-md-6">
+            <div class="col-md-1">
+              <button type="button" class="btn btn-default btn-xs" id="settingsBackBtn"><span class="glyphicon glyphicon-menu-left"></span></button>
+            </div>
+            <div class="col-md-2">
+              <span style=""><strong>Preview: </strong></span><br>
+              <span id="settings-preview-theme"></span>
+            </div>
+            <div class="col-md-6">
               <div class="panel panel-default">
                 <div class="panel-body">
                   <div id="xmlTree-settings" style="">
@@ -161,7 +168,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <span style="">Current: </span>
+              <span style=""><strong>Current: </strong></span>
               <span id="settings-current-theme"></span>
             </div>
           </div>
@@ -170,6 +177,9 @@
 
         </div>
       </div>
+      <div class="modal-footer" id="settingsFooter" style="display:none;">
+        <button type="button" class="btn btn-primary" id="settingsSaveBtn">Save</button>
+      </div>
     </div>
   </div>
 </div>
@@ -177,6 +187,7 @@
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
