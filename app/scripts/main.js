@@ -68,7 +68,7 @@ var xmlViewer = (function() {
     if (nodeValueHtml.length === 0 && childrenHtml.length === 0) {
       nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea'></div><span class='nodeName'>"+ singleTag + "</span></li>";
     } else {
-        nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea "+_appliedStyle+"'></div><span class='nodeName'>" + openTag +"</span>" + nodeValueHtml +childrenHtml+"<span class='closeTag'>"+ closeTag + "</span></li>";
+      nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea "+_appliedStyle+"'></div><span class='nodeName'>" + openTag +"</span>" + nodeValueHtml +childrenHtml+"<span class='closeTag'>"+ closeTag + "</span></li>";
     }
 
     return nodeHtml;
@@ -84,26 +84,6 @@ var xmlViewer = (function() {
         liIcon.removeClass("glyphicon glyphicon-plus").addClass("glyphicon glyphicon-minus");
       }
     }
-  }
-  function _changeTheme() {
-    // TODO: Get all elements matching tagBracket, tagName etc and change their class
-    if (_appliedStyle === '') {
-        _appliedStyle = "ff";
-    } else
-    if (_appliedStyle === 'ff') {
-      _appliedStyle = "chrome";
-    } else
-    if (_appliedStyle === "chrome") {
-      _appliedStyle = "dark";
-    } else
-    if (_appliedStyle === "dark") {
-      _appliedStyle = "";
-    }
-    $('#xmlTree').empty();
-    _self.redraw();
-  }
-  function _modifyStyle() {
-
   }
 
   var _self = {
@@ -150,6 +130,22 @@ var xmlViewer = (function() {
       }
       _traverseDOM(_self.xmlContent, addListItem);
     },
+    _changeTheme: function() {
+      if (_appliedStyle === '') {
+        _appliedStyle = "ff";
+      } else
+      if (_appliedStyle === 'ff') {
+        _appliedStyle = "chrome";
+      } else
+      if (_appliedStyle === "chrome") {
+        _appliedStyle = "dark";
+      } else
+      if (_appliedStyle === "dark") {
+        _appliedStyle = "";
+      }
+      $('#xmlTree').empty();
+      _self.redraw();
+    },
     loadXmlFromFile: function (xmlPath, containerSelector, callback) {
       _self.$container = $(containerSelector);
       $.ajax({
@@ -166,11 +162,12 @@ var xmlViewer = (function() {
     },
     loadXML: function (messageData) {
       var xmlDoc = document.getElementById('xmlMsgDetails').innerHTML;
-      _self.xmlContent = _getXmlDOMFromString(messageData);
-      $('#xmlTree').append("<ul class='children treeview'></ul>");
+      _self.xmlContent = _getXmlDOMFromString(xmlDoc);
+      // $('#xmlTree').append("<ul class='children treeview'></ul>");
       _self.init();
     },
     init: function () {
+      $('#xmlTree').empty();
       _self.renderHtmlTree();
       _self.assignClickHandlers();
     },
@@ -181,4 +178,11 @@ var xmlViewer = (function() {
   return _self;
 }());
 
-xmlViewer.loadXmlFromFile('../res/anotherXml.xml', '.xmlTree', function(){xmlViewer.init();});
+$('#xmlModal').on('shown.bs.modal', function () {
+  // myXml.loadXmlFromFile('../res/test.xml', '.xmlTree', function(){myXml.init();});
+  xmlViewer.loadXML();
+});
+
+$('#xmlSettings').on("click", function () {
+
+});

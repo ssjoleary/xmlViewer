@@ -41,63 +41,124 @@
   </div>
 
 
-  <div class="row">
-    <button type="button" class="btn btn-default" id="changeThemeBtn">
-      Change Theme
+  <div class="row" style="text-align: center;">
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#xmlModal" style="">
+      Show XML
     </button>
-    <div class="row" id="xmlTree">
+  </div>
 
+  <div class="row">
+    <div class="col-md-6">
+      <div id="xmlTreeSettings">
+        <div class="children-settings treeview-settings">
+          <div class="node-settings root-node " >
+            <div class="hitarea-settings  glyphicon glyphicon-minus"></div>
+            <span class="nodeName-settings">
+              <span class="tagBracket-settings ">&lt;</span>
+              <span class="tagName-settings ">root-node</span>
+              <span class="tagBracket-settings ">&gt;</span>
+            </span>
+            <div class="children-settings">
+              <div class="node-settings" >
+                <div class="hitarea-settings glyphicon glyphicon-minus"></div>
+                <span class="nodeName-settings">
+                  <span class="tagBracket-settings ">&lt;</span>
+                  <span class="tagName-settings ">node</span>
+                  <span class="attrName-settings "> attributes
+                    <span class="attrEquals-settings ">=</span>
+                  </span>
+                  <span class="attrValue-settings ">
+                    <span class="attrQuotes-settings ">"</span>attribute-value
+                    <span class="attrQuotes-settings ">"</span>
+                  </span>
+                  <span class="tagBracket-settings ">&gt;</span>
+                </span>
+                <div class="children-settings">
+                  <div class="node-settings" >
+                    <div class="hitarea-settings "></div>
+                    <span class="nodeName-settings">
+                      <span class="tagBracket-settings ">&lt;</span>
+                      <span class="tagName-settings ">node</span>
+                      <span class="tagBracket-settings ">&gt;</span>
+                    </span>
+                    <span class="nodeValue-settings ">node-value</span>
+                    <span class="closeTag-settings">
+                      <span class="tagBracket-settings ">&lt;/</span>
+                      <span class="tagName-settings ">node</span>
+                      <span class="tagBracket-settings ">&gt;</span>
+                    </span>
+                  </div>
+                </div>
+                <span class="closeTag-settings">
+                  <span class="tagBracket-settings ">&lt;/</span>
+                  <span class="tagName-settings ">node</span>
+                  <span class="tagBracket-settings ">&gt;</span>
+                </span>
+              </div>
+            </div>
+            <span class="closeTag-settings">
+              <span class="tagBracket-settings ">&lt;/</span>
+              <span class="tagName-settings ">root-node</span>
+              <span class="tagBracket-settings ">&gt;</span>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div style="margin-top: 10px;">
-    <!-- <pre>
-      &lt?xml version="1.0" encoding="utf-8"?&gt
-      &ltFullContext&gt
-      &ltFcTestSteps&gt
-      &ltTestStep Name="GetExecutionData"&gt
-      &ltEstTime&gt00:30:00&lt/EstTime&gt
-      &ltExe Name="getExecutionData.py"&gt
-      &ltWorkingDirType&gtString&lt/WorkingDirType&gt
-      &ltWorkingDir&gttestModuleApi&lt/WorkingDir&gt
-      &ltArg&gt&lt/Arg&gt
-      &lt/Exe&gt
-      &lt/TestStep&gt
-      &lt/FcTestSteps&gt
-      &ltFcScript Name="MyScript"&gt
-      &ltSBlockItemList&gt
-      &ltTestStep Name="GetExecutionData" IsRestartPoint="True" /&gt
-      &lt/SBlockItemList&gt
-      &lt/FcScript&gt
-      &ltFcVarSets&gt
-      &lt/FcVarSets&gt
-      &ltFcScriptEvents&gt
-      &ltScriptEvent Type="OnStart"&gt
-      &ltSBlockItemList&gt
-      &lt/SBlockItemList&gt
-      &lt/ScriptEvent&gt
-      &ltScriptEvent Type="OnStop"&gt
-      &ltSBlockItemList&gt
-      &lt/SBlockItemList&gt
-      &lt/ScriptEvent&gt
-      &ltScriptEvent Type="OnComplete"&gt
-      &ltSBlockItemList&gt
-      &lt/SBlockItemList&gt
-      &lt/ScriptEvent&gt
-      &ltScriptEvent Type="Finally"&gt
-      &ltSBlockItemList&gt
-      &lt/SBlockItemList&gt
-      &lt/ScriptEvent&gt
-      &lt/FcScriptEvents&gt
-      &lt/FullContext&gt
-    </pre> -->
+  <div style="margin-top: 10px; display: none;" >
+    <pre id="xmlMsgDetails">
+      <?xml version="1.0" encoding="utf-8"?>
+      <FullContext>
+        <FcTestSteps>
+          <TestStep Name="GetExecutionData" IsRestartPoint="True">
+            <EstTime>00:30:00</EstTime>
+            <Exe Name="getExecutionData.py">
+              <WorkingDirType>String</WorkingDirType>
+              <WorkingDir>testModuleApi</WorkingDir>
+              <Arg>
+              </Arg>
+            </Exe>
+          </TestStep>
+        </FcTestSteps>
+      </FullContext>
+    </pre>
   </div>
 
   <div class="footer">
-    <p>xmlViewer ssjoleary 2015</p>
+    <p>xmlViewer 2015</p>
   </div>
 </div>
 
+<div class="modal fade" id="xmlModal" tabindex="-1" role="dialog" aria-labelledby="XMLModal">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">XML Document</h4>
+      </div>
+      <div class="modal-body">
+        <div style="float: right;">
+          <button class="btn btn-default btn-xs" type="button" id="xmlSettingsBtn">
+            Settings
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="row" id="xmlTree">
+
+        </div>
+        <div class="row" id="xmlSettings">
+
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </div> -->
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
