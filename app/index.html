@@ -40,6 +40,7 @@
     <h3 class="text-muted">xmlViewer</h3>
   </div>
 
+<<<<<<< HEAD
 
   <div class="row" style="text-align: center;">
     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#xmlModal" style="">
@@ -124,6 +125,23 @@
         </FcTestSteps>
       </FullContext>
     </pre>
+=======
+  <div class="row">
+
+  <div class="jumbotron" style="text-align: center;">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#xmlModal">
+      Show Modal
+    </button>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <h3>TODO: </h3>
+    <ul>
+      <li>Handle errors with imperfect XML</li>
+      <li>Render XML as a table - assume one level deep only</li>
+      <li>Allow custom size and colours for various XML elements</li>
+    </ul>
+>>>>>>> origin/master
   </div>
 
   <div class="footer">
@@ -136,6 +154,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<<<<<<< HEAD
         <h4 class="modal-title">XML Document</h4>
       </div>
       <div class="modal-body">
@@ -144,10 +163,97 @@
             Settings
             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
           </button>
+=======
+        <h4 class="modal-title" id="xmlModalTitle">XML Viewer</h4>
+      </div>
+      <div class="modal-body">
+        <div id="btnContainer">
+          <button type="button" class="btn btn-default btn-xs" style="float: right;" id="settingsBtn">Settings <span class="glyphicon glyphicon-cog"></span></button>
+          <div class="dropdown" style="float: right; margin-right: 5px;">
+            <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Render Options
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li class="dropdown-header">Render As: </li>
+              <li><a id="renderXml">XML</a></li>
+              <li><a id="renderTable">Table</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="settings-tab" style="display: none;">
+          <div class="row">
+            <div class="col-md-1">
+              <button type="button" class="btn btn-default btn-xs" id="settingsBackBtn"><span class="glyphicon glyphicon-menu-left"></span></button>
+            </div>
+            <div class="col-md-2">
+              <span style=""><strong>Preview: </strong></span><br>
+              <span id="settings-preview-theme"></span>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div id="xmlTree-settings" style="">
+                    <div class="children treeview">
+                      <div class="root-node collapsible">
+                        <div class="hitarea glyphicon glyphicon-minus"></div>
+                        <span class="nodeName">
+                          <span class="tagBracket">&lt;</span><span class="tagName">root-node</span><span class="tagBracket">&gt;</span>
+                        </span>
+                        <div class="node-children">
+                          <div class="node collapsible">
+                            <div class="hitarea glyphicon glyphicon-minus"></div>
+                            <span class="nodeName">
+                              <span class="tagBracket">&lt;</span><span class="tagName">node</span>
+                              <span class="attrName">attributes<span class="attrEquals ">=</span></span><span class="attrValue"><span class="attrQuotes">"</span>attribute-values<span class="attrQuotes ">"</span></span><span class="tagBracket ">&gt;</span>
+                            </span>
+                            <div class="node-grandchildren">
+                              <div class="node child-node">
+                                <div class="hitarea"></div>
+                                <span class="nodeName">
+                                  <span class="tagBracket">&lt;</span><span class="tagName">child-node</span><span class="tagBracket">&gt;</span></span><span class="nodeValue">node-value</span><span class="closeTag"><span class="tagBracket">&lt;/</span><span class="tagName">child-node</span><span class="tagBracket">&gt;</span>
+                                </span>
+                              </div>
+                            </div>
+                            <span class="closeTag">
+                              <span class="tagBracket">&lt;/</span><span class="tagName">node</span><span class="tagBracket">&gt;</span>
+                            </span>
+                          </div>
+                        </div>
+                        <span class="closeTag">
+                          <span class="tagBracket ">&lt;/</span><span class="tagName ">root-node</span><span class="tagBracket ">&gt;</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-2">
+              <span style=""><strong>Theme: </strong></span>
+            </div>
+            <div class="col-md-5">
+              <div class="btn-group" role="group" id="settings-theme-btns">
+                <button type="button" class="btn btn-default theme-btn" value="ie">IE</button>
+                <button type="button" class="btn btn-default theme-btn" value="chrome">Chrome</button>
+                <button type="button" class="btn btn-default theme-btn" value="ff">FireFox</button>
+                <button type="button" class="btn btn-default theme-btn" value="dark">Dark</button>
+                <button type="button" class="btn btn-default theme-btn" value="">No Theme</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <span style=""><strong>Current: </strong></span>
+              <span id="settings-current-theme"></span>
+            </div>
+          </div>
+>>>>>>> origin/master
         </div>
         <div class="row" id="xmlTree">
 
         </div>
+<<<<<<< HEAD
         <div class="row" id="xmlSettings">
 
         </div>
@@ -159,10 +265,23 @@
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+=======
+        <div class="row" id="xmlTable">
+
+        </div>
+      </div>
+      <div class="modal-footer" id="settingsFooter" style="display:none;">
+        <button type="button" class="btn btn-primary" id="settingsSaveBtn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+>>>>>>> origin/master
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

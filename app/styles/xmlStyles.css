@@ -1,5 +1,5 @@
 .treeview div.hitarea {
-  height:16px;
+  /*height:16px;*/
   width:16px;
   margin-left:-16px;
   display: inline-block;
@@ -13,9 +13,12 @@
   cursor: pointer;
 }
 
-/* Chome XML Styles*/
-.treeview .chrome {
+/* Chrome XML Styles */
+#xmlTree.chrome {
   font-family: monospace;
+}
+.treeview span.nodeValue.chrome {
+  /*font-weight: 500;*/
 }
 .treeview span.tagBracket.chrome {
   /*font-weight:250;*/
@@ -40,12 +43,16 @@
   font-family: "Glyphicons Halflings";
 }
 
-/* FireFox XML Styles*/
-.treeview .ff {
-  font-family: serif;
+/* FireFox XML Styles */
+#xmlTree.ff {
+  font-family: sans-serif;
+  font-weight: normal;
+}
+.treeview span.nodeValue.ff {
+  /*font-weight: 500;*/
 }
 .treeview span.tagBracket.ff{
-  font-weight:250;
+  font-weight:600;
 }
 .treeview span.tagName.ff{
   color: purple;
@@ -58,17 +65,51 @@
   color: blue;
 }
 .treeview span.attrEquals.ff{
-  color: blue;
+  color: black;
 }
 .treeview span.attrQuotes.ff{
   color: blue;
 }
 .treeview div.hitarea.ff{
   font-family: "Glyphicons Halflings";
+  width: 13px;
+  vertical-align: middle;
 }
 
-/* Dark Theme*/
-ul.children.treeview.dark{
+/* IE Theme */
+#xmlTree.ie{
+  font: small Verdana;
+}
+.treeview span.nodeValue.ie {
+  font-weight: bold;
+}
+.treeview span.tagBracket.ie{
+  color: blue;
+}
+.treeview span.tagName.ie{
+  color: rgb(153, 0, 0);
+}
+.treeview span.attrName.ie {
+  color: rgb(153, 0, 0);
+}
+.treeview span.attrValue.ie {
+  font-weight: bold;
+}
+.treeview span.attrEquals.ie{
+  color: blue;
+}
+.treeview span.attrQuotes.ie{
+  color: blue;
+}
+.treeview div.hitarea.ie{
+  color: red;
+  font-size: 4pt;
+  vertical-align: middle;
+  width: 10px;
+}
+
+/* Dark Theme */
+#xmlTree.dark{
   background-color: hsl(220, 13%, 18%);
 }
 .treeview span.nodeValue.dark {
@@ -94,4 +135,24 @@ ul.children.treeview.dark{
 }
 .treeview div.hitarea.dark{
   color: hsl(220, 14%, 71%);
+}
+
+/* Example XML */
+#xmlTree-settings.dark{
+  background-color: hsl(220, 13%, 18%);
+}
+#xmlTree-settings.chrome, #xmlTre-settingse.ff, #xmlTree-settings.ie{
+  background-color: white;
+}
+#xmlTree-settings div.children.treeview {
+  margin-left: 20px;
+}
+#xmlTree-settings div.treeview div.hitarea {
+  width: 10px;
+}
+#xmlTree-settings div.treeview div.node-children {
+  margin-left: 20px;
+}
+#xmlTree-settings div.treeview div.node-grandchildren {
+  margin-left: 20px;
 }

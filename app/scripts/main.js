@@ -1,7 +1,10 @@
 'use strict';
 
 var xmlViewer = (function() {
-  var _appliedStyle = '';
+  var _appliedStyle = '',
+  _newStyle = '',
+  _tempStyle = '';
+
   function _getXmlDOMFromString(xmlStr) {
     xmlStr = xmlStr.trim();
     if (window.ActiveXObject && window.GetObject) {
@@ -25,13 +28,13 @@ var xmlViewer = (function() {
   }
   function _getAttributes(node) {
     var attrHtml = "",
-    attrEquals = "<span class='attrEquals "+_appliedStyle+"'>=</span>",
-    attrQuotes = '<span class="attrQuotes '+_appliedStyle+'">"</span>';
+    attrEquals = "<span class='attrEquals'>=</span>",
+    attrQuotes = '<span class="attrQuotes">"</span>';
     if (!node.attributes) {
       return attrHtml;
     }
     $.each(node.attributes, function (index, value) {
-      attrHtml += "<span class='attrName "+_appliedStyle+"'> "+value.nodeName + attrEquals+ '</span><span class="attrValue '+_appliedStyle+'">'+ attrQuotes + value.nodeValue + attrQuotes + '</span> ';
+      attrHtml += "<span class='attrName'> "+value.nodeName + attrEquals+ '</span><span class="attrValue">'+ attrQuotes + value.nodeValue + attrQuotes + '</span> ';
     });
     return attrHtml;
   }
@@ -39,7 +42,7 @@ var xmlViewer = (function() {
     var nodeValue = "";
     if (node.firstChild && node.firstChild.nodeType === 3) {
       if (node.firstChild.nodeValue.trim()) {
-        nodeValue = "<span class='nodeValue "+_appliedStyle+"'>"+node.firstChild.nodeValue+"</span>";
+        nodeValue = "<span class='nodeValue'>"+node.firstChild.nodeValue+"</span>";
       }
     }
     return nodeValue;
@@ -56,11 +59,11 @@ var xmlViewer = (function() {
     nodeValueHtml = _getNodeValue(node),
     childrenHtml = _getChildren(node),
     nodeHtml = "",
-    firstTagOpen = "<span class='tagBracket "+_appliedStyle+"'>&lt</span>",
-    tagClose = "<span class='tagBracket "+_appliedStyle+"'>&gt</span>",
-    secondTagOpen = "<span class='tagBracket "+_appliedStyle+"'>&lt/</span>",
-    singleTagClose = "<span class='tagBracket "+_appliedStyle+"'> /&gt</span>",
-    tagText = "<span class='tagName "+_appliedStyle+"'>"+node.nodeName+"</span>",
+    firstTagOpen = "<span class='tagBracket'>&lt</span>",
+    tagClose = "<span class='tagBracket'>&gt</span>",
+    secondTagOpen = "<span class='tagBracket'>&lt/</span>",
+    singleTagClose = "<span class='tagBracket'> /&gt</span>",
+    tagText = "<span class='tagName'>"+node.nodeName+"</span>",
     openTag = firstTagOpen + tagText + attrHtml +tagClose,
     closeTag = secondTagOpen + tagText + tagClose,
     singleTag = firstTagOpen + tagText + attrHtml + singleTagClose;
@@ -68,7 +71,11 @@ var xmlViewer = (function() {
     if (nodeValueHtml.length === 0 && childrenHtml.length === 0) {
       nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea'></div><span class='nodeName'>"+ singleTag + "</span></li>";
     } else {
+<<<<<<< HEAD
       nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea "+_appliedStyle+"'></div><span class='nodeName'>" + openTag +"</span>" + nodeValueHtml +childrenHtml+"<span class='closeTag'>"+ closeTag + "</span></li>";
+=======
+        nodeHtml = "<li class='node " + node.nodeName + "' nodeIndex=" + (++_self.nodeIndex) + ">" + "<div class='hitarea'></div><span class='nodeName'>" + openTag +"</span>" + nodeValueHtml +childrenHtml+"<span class='closeTag'>"+ closeTag + "</span></li>";
+>>>>>>> origin/master
     }
 
     return nodeHtml;
@@ -85,37 +92,129 @@ var xmlViewer = (function() {
       }
     }
   }
+<<<<<<< HEAD
+=======
+  function _applyTheme(xmlTree, newStyle, oldStyle){
+    var nodeValueElements = $(xmlTree).find('.treeview span.nodeValue'),
+    tagBracketElements = $(xmlTree).find('.treeview span.tagBracket'),
+    tagNameElements = $(xmlTree).find('.treeview span.tagName'),
+    attrNameElements = $(xmlTree).find('.treeview span.attrName'),
+    attrValueElements = $(xmlTree).find('.treeview span.attrValue'),
+    attrEqualsElements = $(xmlTree).find('.treeview span.attrEquals'),
+    attrQuotesElements = $(xmlTree).find('.treeview span.attrQuotes'),
+    hitareaElements = $(xmlTree).find('.treeview div.hitarea'),
+    elementsArray = [nodeValueElements, tagBracketElements, tagNameElements, attrNameElements, attrValueElements, attrEqualsElements, attrQuotesElements, hitareaElements];
 
+    $(xmlTree).removeClass(oldStyle).addClass(newStyle);
+    $.each(elementsArray, function (arrayIndex, array) {
+      $.each(array, function(index, value){
+        $(value).removeClass(oldStyle).addClass(newStyle);
+      });
+    });
+  }
+  function _toggleSettingsView() {
+    $('#xmlTree').toggle();
+    $('#settings-tab').toggle();
+    $('#btnContainer').toggle();
+    $('#settingsFooter').toggle();
+  }
+  function _getCookies() {
+    if (Cookies.get('theme')) {
+      _appliedStyle = Cookies.get('theme');
+    }
+  }
+  function _eliminateDuplicates(arr) {
+    var i,
+    len = arr.length,
+    out = [],
+    obj = {};
+
+    for (i = 0; i < len; i++) {
+
+      if (!obj[arr[i]]) {
+>>>>>>> origin/master
+
+        obj[arr[i]] = {};
+
+        out.push(arr[i]);
+
+      }
+
+    }
+    return out;
+  }
   var _self = {
     xmlContent  : {},
+    $container : '',
     nodeIndex : -1,
+    hasInit : false,
+    themes : {
+      'ie': 'Internet Explorer',
+      'chrome': 'Google Chrome',
+      'ff': 'FireFox',
+      'dark': 'Dark Theme',
+      '': 'No Theme'
+    },
 
     assignClickHandlers: function() {
-      $('#xmlTree')
+      $(_self.$container)
       .on("click", "span.nodeName", function () {
         _toggleNode.apply($(this).parent().get(0));
       })
       .on("click", "div.hitarea", function () {
         _toggleNode.apply($(this).parent().get(0));
       });
-      $('#changeThemeBtn')
+
+      $('#settingsBtn')
       .on("click", function(){
-        _changeTheme();
+        $('#settings-current-theme').text(_self.themes[_appliedStyle]);
+        $('#settings-preview-theme').text(_self.themes[_appliedStyle]);
+        _applyTheme("#xmlTree-settings", _appliedStyle, _tempStyle);
+        _tempStyle = _appliedStyle;
+        _toggleSettingsView();
+      });
+
+      $('#settingsBackBtn')
+      .on("click", function () {
+        _toggleSettingsView();
+      })
+
+      $('#settings-theme-btns>button.theme-btn')
+      .on("click", function(){
+        _newStyle = $(this).get(0).value;
+        _applyTheme("#xmlTree-settings", _newStyle, _tempStyle);
+        _tempStyle = _newStyle;
+        $('#settings-preview-theme').text(_self.themes[_tempStyle]);
+        $('#settings-current-theme').text(_self.themes[_appliedStyle]);
+      });
+
+      $('#settingsSaveBtn')
+      .on("click", function(){
+        _applyTheme("#xmlTree", _tempStyle, _appliedStyle);
+        _appliedStyle = _tempStyle;
+        $('#settings-current-theme').text(_self.themes[_appliedStyle]);
+        Cookies.set('theme', _appliedStyle);
       });
     },
+    resetView: function () {
+      $('#xmlTree').show();
+      $('#settingsBtn').show();
+      $('#settings-tab').hide();
+      $('#settingsFooter').hide();
+    },
     renderHtmlTree: function () {
-      var addListItem = function (curNode) {
+      var configNode = function (curNode) {
         var parentNodeName,
         parentNodeIndex,
         nodeHtml = '';
 
         if (curNode.nodeType === 1) {
           nodeHtml = _createNodeHtml(curNode);
-          if (curNode.parentNode.nodeName === "#document") {
-            $("#xmlTree").append("<ul class='children treeview "+_appliedStyle+"'></ul>");
+          parentNodeName = curNode.parentNode.nodeName;
+          if (parentNodeName === "#document") {
+            $(_self.$container).append("<ul class='children treeview'></ul>");
             $("ul.treeview").append(nodeHtml);
           } else {
-            parentNodeName = curNode.parentNode.nodeName;
             parentNodeIndex = parseInt($("li." + parentNodeName + ":last").attr('nodeIndex'), 10);
             $('[nodeIndex="' + parentNodeIndex +'"]')
             .children("ul.children")
@@ -128,7 +227,20 @@ var xmlViewer = (function() {
           }
         }
       }
-      _traverseDOM(_self.xmlContent, addListItem);
+      _traverseDOM(_self.xmlContent, configNode);
+    },
+    renderHtmlTable: function () {
+      var rootNode = _self.xmlContent.documentElement,
+          tempTableHeaders = [],
+          tableHeaders = [];
+      $('#xmlTable').append("<table class='table tableview'><thead></thead><tbody></tbody></table>");
+      $.each(rootNode.children, function (index, node) {
+        $.each(node.children, function (index, childNode) {
+          tempTableHeaders.push(childNode.nodeName);
+        });
+      });
+      tableHeaders =_eliminateDuplicates(tempTableHeaders);
+      $('#xmlTable.table.thead')
     },
     _changeTheme: function() {
       if (_appliedStyle === '') {
@@ -155,13 +267,15 @@ var xmlViewer = (function() {
         dataType: "xml",
         error: function(){console.log("Error loading XML File")},
         success: function (xml) {
+          console.log(xml.documentElement);
           _self.xmlContent = xml;
           callback();
         }
       });
     },
-    loadXML: function (messageData) {
+    loadXML: function (messageData, containerSelector) {
       var xmlDoc = document.getElementById('xmlMsgDetails').innerHTML;
+<<<<<<< HEAD
       _self.xmlContent = _getXmlDOMFromString(xmlDoc);
       // $('#xmlTree').append("<ul class='children treeview'></ul>");
       _self.init();
@@ -170,19 +284,41 @@ var xmlViewer = (function() {
       $('#xmlTree').empty();
       _self.renderHtmlTree();
       _self.assignClickHandlers();
+=======
+      _self.xmlContent = _getXmlDOMFromString(messageData);
+      _self.init();
     },
-    redraw: function () {
-      _self.renderHtmlTree();
+    init: function (containerSelector) {
+      _self.draw(containerSelector);
+      if (!_self.hasInit) {
+        _self.assignClickHandlers();
+        _self.hasInit = true;
+      }
+>>>>>>> origin/master
+    },
+    draw: function (xmlTree) {
+      $(xmlTree).empty();
+      _getCookies();
+      _self.renderHtmlTree(xmlTree);
+      _applyTheme(xmlTree, _appliedStyle);
     }
   }
   return _self;
 }());
 
 $('#xmlModal').on('shown.bs.modal', function () {
+<<<<<<< HEAD
   // myXml.loadXmlFromFile('../res/test.xml', '.xmlTree', function(){myXml.init();});
   xmlViewer.loadXML();
 });
 
 $('#xmlSettings').on("click", function () {
 
+=======
+  xmlViewer.loadXmlFromFile('../res/drive_enumeration_Megatron_114_shirt.xml', '#xmlTree', function(){xmlViewer.init('#xmlTree');});
+});
+
+$('#xmlModal').on('hidden.bs.modal', function () {
+  xmlViewer.resetView();
+>>>>>>> origin/master
 });
