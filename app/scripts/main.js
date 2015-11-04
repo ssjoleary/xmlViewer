@@ -109,7 +109,7 @@ var xmlViewer = (function() {
   function _toggleSettingsView() {
     $('#xmlTree').toggle();
     $('#settings-tab').toggle();
-    $('#settingsBtn').toggle();
+    $('#btnContainer').toggle();
     $('#settingsFooter').toggle();
   }
   function _getCookies() {
@@ -117,9 +117,28 @@ var xmlViewer = (function() {
       _appliedStyle = Cookies.get('theme');
     }
   }
+  function _eliminateDuplicates(arr) {
+    var i,
+    len = arr.length,
+    out = [],
+    obj = {};
 
+    for (i = 0; i < len; i++) {
+
+      if (!obj[arr[i]]) {
+
+        obj[arr[i]] = {};
+
+        out.push(arr[i]);
+
+      }
+
+    }
+    return out;
+  }
   var _self = {
     xmlContent  : {},
+    $container : '',
     nodeIndex : -1,
     hasInit : false,
     themes : {
@@ -131,8 +150,7 @@ var xmlViewer = (function() {
     },
 
     assignClickHandlers: function() {
-      // TODO: Assign dynamically
-      $('#xmlTree')
+      $(_self.$container)
       .on("click", "span.nodeName", function () {
         _toggleNode.apply($(this).parent().get(0));
       })
@@ -177,19 +195,19 @@ var xmlViewer = (function() {
       $('#settings-tab').hide();
       $('#settingsFooter').hide();
     },
-    renderHtmlTree: function (xmlTree) {
-      var addListItem = function (curNode) {
+    renderHtmlTree: function () {
+      var configNode = function (curNode) {
         var parentNodeName,
         parentNodeIndex,
         nodeHtml = '';
 
         if (curNode.nodeType === 1) {
           nodeHtml = _createNodeHtml(curNode);
-          if (curNode.parentNode.nodeName === "#document") {
-            $(xmlTree).append("<ul class='children treeview'></ul>");
+          parentNodeName = curNode.parentNode.nodeName;
+          if (parentNodeName === "#document") {
+            $(_self.$container).append("<ul class='children treeview'></ul>");
             $("ul.treeview").append(nodeHtml);
           } else {
-            parentNodeName = curNode.parentNode.nodeName;
             parentNodeIndex = parseInt($("li." + parentNodeName + ":last").attr('nodeIndex'), 10);
             $('[nodeIndex="' + parentNodeIndex +'"]')
             .children("ul.children")
@@ -202,7 +220,20 @@ var xmlViewer = (function() {
           }
         }
       }
-      _traverseDOM(_self.xmlContent, addListItem);
+      _traverseDOM(_self.xmlContent, configNode);
+    },
+    renderHtmlTable: function () {
+      var rootNode = _self.xmlContent.documentElement,
+          tempTableHeaders = [],
+          tableHeaders = [];
+      $('#xmlTable').append("<table class='table tableview'><thead></thead><tbody></tbody></table>");
+      $.each(rootNode.children, function (index, node) {
+        $.each(node.children, function (index, childNode) {
+          tempTableHeaders.push(childNode.nodeName);
+        });
+      });
+      tableHeaders =_eliminateDuplicates(tempTableHeaders);
+      $('#xmlTable.table.thead')
     },
     loadXmlFromFile: function (xmlPath, containerSelector, callback) {
       _self.$container = $(containerSelector);
@@ -213,6 +244,7 @@ var xmlViewer = (function() {
         dataType: "xml",
         error: function(){console.log("Error loading XML File")},
         success: function (xml) {
+          console.log(xml.documentElement);
           _self.xmlContent = xml;
           callback();
         }
@@ -241,7 +273,7 @@ var xmlViewer = (function() {
 }());
 
 $('#xmlModal').on('shown.bs.modal', function () {
-  xmlViewer.loadXmlFromFile('../res/newXml.xml', '#xmlTree', function(){xmlViewer.init('#xmlTree');});
+  xmlViewer.loadXmlFromFile('../res/drive_enumeration_Megatron_114_shirt.xml', '#xmlTree', function(){xmlViewer.init('#xmlTree');});
 });
 
 $('#xmlModal').on('hidden.bs.modal', function () {

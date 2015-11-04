@@ -49,46 +49,12 @@
   </div>
 
   <div style="margin-top: 10px;">
-    <!-- <pre>
-      &lt?xml version="1.0" encoding="utf-8"?&gt
-      &ltFullContext&gt
-      &ltFcTestSteps&gt
-      &ltTestStep Name="GetExecutionData"&gt
-      &ltEstTime&gt00:30:00&lt/EstTime&gt
-      &ltExe Name="getExecutionData.py"&gt
-      &ltWorkingDirType&gtString&lt/WorkingDirType&gt
-      &ltWorkingDir&gttestModuleApi&lt/WorkingDir&gt
-      &ltArg&gt&lt/Arg&gt
-      &lt/Exe&gt
-      &lt/TestStep&gt
-      &lt/FcTestSteps&gt
-      &ltFcScript Name="MyScript"&gt
-      &ltSBlockItemList&gt
-      &ltTestStep Name="GetExecutionData" IsRestartPoint="True" /&gt
-      &lt/SBlockItemList&gt
-      &lt/FcScript&gt
-      &ltFcVarSets&gt
-      &lt/FcVarSets&gt
-      &ltFcScriptEvents&gt
-      &ltScriptEvent Type="OnStart"&gt
-      &ltSBlockItemList&gt
-      &lt/SBlockItemList&gt
-      &lt/ScriptEvent&gt
-      &ltScriptEvent Type="OnStop"&gt
-      &ltSBlockItemList&gt
-      &lt/SBlockItemList&gt
-      &lt/ScriptEvent&gt
-      &ltScriptEvent Type="OnComplete"&gt
-      &ltSBlockItemList&gt
-      &lt/SBlockItemList&gt
-      &lt/ScriptEvent&gt
-      &ltScriptEvent Type="Finally"&gt
-      &ltSBlockItemList&gt
-      &lt/SBlockItemList&gt
-      &lt/ScriptEvent&gt
-      &lt/FcScriptEvents&gt
-      &lt/FullContext&gt
-    </pre> -->
+    <h3>TODO: </h3>
+    <ul>
+      <li>Handle errors with imperfect XML</li>
+      <li>Render XML as a table - assume one level deep only</li>
+      <li>Allow custom size and colours for various XML elements</li>
+    </ul>
   </div>
 
   <div class="footer">
@@ -104,7 +70,20 @@
         <h4 class="modal-title" id="xmlModalTitle">XML Viewer</h4>
       </div>
       <div class="modal-body">
-        <button type="button" class="btn btn-default btn-xs" style="float: right;" id="settingsBtn">Settings <span class="glyphicon glyphicon-cog"></span></button>
+        <div id="btnContainer">
+          <button type="button" class="btn btn-default btn-xs" style="float: right;" id="settingsBtn">Settings <span class="glyphicon glyphicon-cog"></span></button>
+          <div class="dropdown" style="float: right; margin-right: 5px;">
+            <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Render Options
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li class="dropdown-header">Render As: </li>
+              <li><a id="renderXml">XML</a></li>
+              <li><a id="renderTable">Table</a></li>
+            </ul>
+          </div>
+        </div>
         <div id="settings-tab" style="display: none;">
           <div class="row">
             <div class="col-md-1">
@@ -174,6 +153,9 @@
           </div>
         </div>
         <div class="row" id="xmlTree">
+
+        </div>
+        <div class="row" id="xmlTable">
 
         </div>
       </div>
