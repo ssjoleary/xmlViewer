@@ -53,5 +53,8 @@
         2
       ]
     }
+  },
+  "dependencies": {
+    "knockout": "^3.3.0"
   }
 }

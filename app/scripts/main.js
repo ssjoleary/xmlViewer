@@ -1,8 +1,17 @@
 'use strict';
 
-var xmlViewer = (function() {
+var xmlViewer = (function(xmlViewer) {
+  xmlViewer.xmlViewerViewModel = {
+    showSettings: ko.observable(false),
+    showXmlRenders: ko.observable(true),
+    appliedStyle: ko.observable(''),
+    previewStyle: ko.observable(''),
+
+    angleBracketSize: ko.observable('Medium')
+  }
+
   var _appliedStyle = '',
-  _newStyle = '',
+  _previewStyle = '',
   _tempStyle = '';
 
   function _getXmlDOMFromString(xmlStr) {
@@ -107,14 +116,16 @@ var xmlViewer = (function() {
     });
   }
   function _toggleSettingsView() {
-    $('#xmlTree').toggle();
-    $('#settings-tab').toggle();
-    $('#btnContainer').toggle();
-    $('#settingsFooter').toggle();
+    if (xmlViewer.xmlViewerViewModel.showSettings() === false) {
+      xmlViewer.xmlViewerViewModel.showSettings(true).showXmlRenders(false);
+    } else {
+      xmlViewer.xmlViewerViewModel.showSettings(false).showXmlRenders(true);
+    }
   }
   function _getCookies() {
     if (Cookies.get('theme')) {
       _appliedStyle = Cookies.get('theme');
+      _previewStyle = Cookies.get('theme');
     }
   }
   function _eliminateDuplicates(arr) {
@@ -124,15 +135,10 @@ var xmlViewer = (function() {
     obj = {};
 
     for (i = 0; i < len; i++) {
-
       if (!obj[arr[i]]) {
-
         obj[arr[i]] = {};
-
         out.push(arr[i]);
-
       }
-
     }
     return out;
   }
@@ -160,10 +166,11 @@ var xmlViewer = (function() {
 
       $('#settingsBtn')
       .on("click", function(){
-        $('#settings-current-theme').text(_self.themes[_appliedStyle]);
-        $('#settings-preview-theme').text(_self.themes[_appliedStyle]);
         _applyTheme("#xmlTree-settings", _appliedStyle, _tempStyle);
         _tempStyle = _appliedStyle;
+        xmlViewer.xmlViewerViewModel
+        .appliedStyle(_self.themes[_appliedStyle])
+        .previewStyle(_self.themes[_appliedStyle]);
         _toggleSettingsView();
       });
 
@@ -174,26 +181,22 @@ var xmlViewer = (function() {
 
       $('#settings-theme-btns>button.theme-btn')
       .on("click", function(){
-        _newStyle = $(this).get(0).value;
-        _applyTheme("#xmlTree-settings", _newStyle, _tempStyle);
-        _tempStyle = _newStyle;
-        $('#settings-preview-theme').text(_self.themes[_tempStyle]);
-        $('#settings-current-theme').text(_self.themes[_appliedStyle]);
+        _previewStyle = $(this).get(0).value;
+        _applyTheme("#xmlTree-settings", _previewStyle, _tempStyle);
+        _tempStyle = _previewStyle;
+        xmlViewer.xmlViewerViewModel.previewStyle(_self.themes[_previewStyle]);
       });
 
       $('#settingsSaveBtn')
       .on("click", function(){
         _applyTheme("#xmlTree", _tempStyle, _appliedStyle);
         _appliedStyle = _tempStyle;
-        $('#settings-current-theme').text(_self.themes[_appliedStyle]);
+        xmlViewer.xmlViewerViewModel.appliedStyle(_self.themes[_appliedStyle]);
         Cookies.set('theme', _appliedStyle);
       });
     },
     resetView: function () {
-      $('#xmlTree').show();
-      $('#settingsBtn').show();
-      $('#settings-tab').hide();
-      $('#settingsFooter').hide();
+      xmlViewer.xmlViewerViewModel.showSettings(false).showXmlRenders(true);
     },
     renderHtmlTree: function () {
       var configNode = function (curNode) {
@@ -258,6 +261,7 @@ var xmlViewer = (function() {
     init: function (containerSelector) {
       _self.draw(containerSelector);
       if (!_self.hasInit) {
+        ko.applyBindings(xmlViewer.xmlViewerViewModel, document.getElementById('xmlModal'));
         _self.assignClickHandlers();
         _self.hasInit = true;
       }
@@ -266,11 +270,11 @@ var xmlViewer = (function() {
       $(xmlTree).empty();
       _getCookies();
       _self.renderHtmlTree(xmlTree);
-      _applyTheme(xmlTree, _appliedStyle);
+      _applyTheme(xmlTree, _appliedStyle, '');
     }
   }
   return _self;
-}());
+}(xmlViewer || {}));
 
 $('#xmlModal').on('shown.bs.modal', function () {
   xmlViewer.loadXmlFromFile('../res/drive_enumeration_Megatron_114_shirt.xml', '#xmlTree', function(){xmlViewer.init('#xmlTree');});

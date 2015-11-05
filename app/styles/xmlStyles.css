@@ -156,3 +156,14 @@
 #xmlTree-settings div.treeview div.node-grandchildren {
   margin-left: 20px;
 }
+
+#customXmlStyles div.panel-body {
+  text-align: center;
+  padding: 0;
+}
+#customXmlStyles {
+margin-top: 10px;
+}
+#xmlTree {
+  word-wrap: break-word;
+}

@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "modernizr": "~2.8.3",
-    "js-cookie": "~2.0.4"
+    "js-cookie": "~2.0.4",
+    "knockout": "^3.3.0"
   },
   "overrides": {
     "bootstrap": {

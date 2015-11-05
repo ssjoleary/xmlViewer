@@ -70,7 +70,7 @@
         <h4 class="modal-title" id="xmlModalTitle">XML Viewer</h4>
       </div>
       <div class="modal-body">
-        <div id="btnContainer">
+        <div data-bind="visible: showXmlRenders()" id="btnContainer">
           <button type="button" class="btn btn-default btn-xs" style="float: right;" id="settingsBtn">Settings <span class="glyphicon glyphicon-cog"></span></button>
           <div class="dropdown" style="float: right; margin-right: 5px;">
             <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -79,21 +79,22 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li class="dropdown-header">Render As: </li>
-              <li><a id="renderXml">XML</a></li>
-              <li><a id="renderTable">Table</a></li>
+              <li><a href="#" id="renderXml">XML</a></li>
+              <li><a href="#" id="renderTable">Table</a></li>
             </ul>
           </div>
         </div>
-        <div id="settings-tab" style="display: none;">
+
+        <div data-bind="visible: showSettings()" id="settings-tab" style="display: none;">
           <div class="row">
-            <div class="col-md-1">
+            <div class="col-sm-1 col-md-1">
               <button type="button" class="btn btn-default btn-xs" id="settingsBackBtn"><span class="glyphicon glyphicon-menu-left"></span></button>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-2 col-md-2">
               <span style=""><strong>Preview: </strong></span><br>
-              <span id="settings-preview-theme"></span>
+              <span data-bind="text: previewStyle" id="settings-preview-theme"></span>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-8 col-md-6">
               <div class="panel panel-default">
                 <div class="panel-body">
                   <div id="xmlTree-settings" style="">
@@ -134,32 +135,106 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-offset-1 col-md-2">
+            <div class="col-sm-3 col-md-offset-1 col-md-2">
               <span style=""><strong>Theme: </strong></span>
             </div>
-            <div class="col-md-5">
+            <div class="col-sm-9 col-md-6" style="text-align: center;">
               <div class="btn-group" role="group" id="settings-theme-btns">
                 <button type="button" class="btn btn-default theme-btn" value="ie">IE</button>
                 <button type="button" class="btn btn-default theme-btn" value="chrome">Chrome</button>
                 <button type="button" class="btn btn-default theme-btn" value="ff">FireFox</button>
                 <button type="button" class="btn btn-default theme-btn" value="dark">Dark</button>
                 <button type="button" class="btn btn-default theme-btn" value="">No Theme</button>
+                <button type="button" class="btn btn-default theme-btn" value="custom">Custom</button>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4 col-md-3">
               <span style=""><strong>Current: </strong></span>
-              <span id="settings-current-theme"></span>
+              <span data-bind="text: appliedStyle" id="settings-current-theme"></span>
             </div>
           </div>
-        </div>
-        <div class="row" id="xmlTree">
+          <div class="row" id="customXmlStyles">
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <span>Angle Brackets</span>
+                </div>
+              </div>
+              <span>Size: </span>
+              <div class="dropdown">
+                <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#" id="renderXml">Small</a></li>
+                  <li><a href="#" id="renderTable">Medium</a></li>
+                  <li><a href="#" id="renderTable">Large</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <span>Node Value</span>
+                </div>
+              </div>
+              <span>Size: </span>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <span>Node Name</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <span>Attribute Name</span>
+                </div>
+              </div>
+            </div><div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <span>Attribute Value</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <span>Attribute Equals</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <span>Attribute Quotes</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <span>Toggle Icon</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
-        <div class="row" id="xmlTable">
 
+        <div data-bind="visible: showXmlRenders()" class="row">
+          <div class="col-sm-12 col-md-12" id="xmlTree">
+
+          </div>
+          <div class="row" id="xmlTable">
+
+          </div>
         </div>
       </div>
-      <div class="modal-footer" id="settingsFooter" style="display:none;">
+      <div data-bind="visible: showSettings()" class="modal-footer" id="settingsFooter" style="display:none;">
         <button type="button" class="btn btn-primary" id="settingsSaveBtn">Save</button>
       </div>
     </div>
@@ -170,6 +245,7 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/knockout/dist/knockout.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
