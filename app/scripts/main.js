@@ -7,7 +7,8 @@ var xmlViewer = (function(xmlViewer) {
     appliedStyle: ko.observable(''),
     previewStyle: ko.observable(''),
 
-    angleBracketSize: ko.observable('Medium')
+    angleBracketSize: ko.observable('14px'),
+    angleBracketColour: ko.observable('Black')
   }
 
   var _appliedStyle = '',

@@ -167,3 +167,11 @@ margin-top: 10px;
 #xmlTree {
   word-wrap: break-word;
 }
+
+div.custom-dropdown {
+  display: inline-block;
+}
+div hr{
+  margin-top: 0;
+  margin-bottom: 7px;
+}
