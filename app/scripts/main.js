@@ -7,6 +7,11 @@ var xmlViewer = (function(xmlViewer) {
     appliedStyle: ko.observable(''),
     previewStyle: ko.observable(''),
 
+    customElements: ko.observableArray([{
+      'element': 'Angle Brackets',
+      'attributes': [{'name':'Size', 'value':'14px'}, {'name':'Colour', 'value':'Black'}]
+    }]),
+
     angleBracketSize: ko.observable('14px'),
     angleBracketColour: ko.observable('Black')
   }
@@ -98,8 +103,6 @@ var xmlViewer = (function(xmlViewer) {
       }
     }
   }
-<<<<<<< HEAD
-=======
   function _applyTheme(xmlTree, newStyle, oldStyle){
     var nodeValueElements = $(xmlTree).find('.treeview span.nodeValue'),
     tagBracketElements = $(xmlTree).find('.treeview span.tagBracket'),
@@ -296,12 +299,7 @@ var xmlViewer = (function(xmlViewer) {
 }(xmlViewer || {}));
 
 $('#xmlModal').on('shown.bs.modal', function () {
-  // myXml.loadXmlFromFile('../res/test.xml', '.xmlTree', function(){myXml.init();});
-  xmlViewer.loadXML();
-});
-
-$('#xmlSettings').on("click", function () {
-  xmlViewer.loadXmlFromFile('../res/drive_enumeration_Megatron_114_shirt.xml', '#xmlTree', function(){xmlViewer.init('#xmlTree');});
+  xmlViewer.loadXmlFromFile('../res/myXml.xml', '#xmlTree', function(){xmlViewer.init('#xmlTree');});
 });
 
 $('#xmlModal').on('hidden.bs.modal', function () {
