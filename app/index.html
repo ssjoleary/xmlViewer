@@ -40,92 +40,6 @@
     <h3 class="text-muted">xmlViewer</h3>
   </div>
 
-<<<<<<< HEAD
-
-  <div class="row" style="text-align: center;">
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#xmlModal" style="">
-      Show XML
-    </button>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div id="xmlTreeSettings">
-        <div class="children-settings treeview-settings">
-          <div class="node-settings root-node " >
-            <div class="hitarea-settings  glyphicon glyphicon-minus"></div>
-            <span class="nodeName-settings">
-              <span class="tagBracket-settings ">&lt;</span>
-              <span class="tagName-settings ">root-node</span>
-              <span class="tagBracket-settings ">&gt;</span>
-            </span>
-            <div class="children-settings">
-              <div class="node-settings" >
-                <div class="hitarea-settings glyphicon glyphicon-minus"></div>
-                <span class="nodeName-settings">
-                  <span class="tagBracket-settings ">&lt;</span>
-                  <span class="tagName-settings ">node</span>
-                  <span class="attrName-settings "> attributes
-                    <span class="attrEquals-settings ">=</span>
-                  </span>
-                  <span class="attrValue-settings ">
-                    <span class="attrQuotes-settings ">"</span>attribute-value
-                    <span class="attrQuotes-settings ">"</span>
-                  </span>
-                  <span class="tagBracket-settings ">&gt;</span>
-                </span>
-                <div class="children-settings">
-                  <div class="node-settings" >
-                    <div class="hitarea-settings "></div>
-                    <span class="nodeName-settings">
-                      <span class="tagBracket-settings ">&lt;</span>
-                      <span class="tagName-settings ">node</span>
-                      <span class="tagBracket-settings ">&gt;</span>
-                    </span>
-                    <span class="nodeValue-settings ">node-value</span>
-                    <span class="closeTag-settings">
-                      <span class="tagBracket-settings ">&lt;/</span>
-                      <span class="tagName-settings ">node</span>
-                      <span class="tagBracket-settings ">&gt;</span>
-                    </span>
-                  </div>
-                </div>
-                <span class="closeTag-settings">
-                  <span class="tagBracket-settings ">&lt;/</span>
-                  <span class="tagName-settings ">node</span>
-                  <span class="tagBracket-settings ">&gt;</span>
-                </span>
-              </div>
-            </div>
-            <span class="closeTag-settings">
-              <span class="tagBracket-settings ">&lt;/</span>
-              <span class="tagName-settings ">root-node</span>
-              <span class="tagBracket-settings ">&gt;</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div style="margin-top: 10px; display: none;" >
-    <pre id="xmlMsgDetails">
-      <?xml version="1.0" encoding="utf-8"?>
-      <FullContext>
-        <FcTestSteps>
-          <TestStep Name="GetExecutionData" IsRestartPoint="True">
-            <EstTime>00:30:00</EstTime>
-            <Exe Name="getExecutionData.py">
-              <WorkingDirType>String</WorkingDirType>
-              <WorkingDir>testModuleApi</WorkingDir>
-              <Arg>
-              </Arg>
-            </Exe>
-          </TestStep>
-        </FcTestSteps>
-      </FullContext>
-    </pre>
-=======
   <div class="row">
 
   <div class="jumbotron" style="text-align: center;">
@@ -141,7 +55,6 @@
       <li>Render XML as a table - assume one level deep only</li>
       <li>Allow custom size and colours for various XML elements</li>
     </ul>
->>>>>>> origin/master
   </div>
 
   <div class="footer">
@@ -154,20 +67,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-<<<<<<< HEAD
-        <h4 class="modal-title">XML Document</h4>
-      </div>
-      <div class="modal-body">
-        <div style="float: right;">
-          <button class="btn btn-default btn-xs" type="button" id="xmlSettingsBtn">
-            Settings
-            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-          </button>
-=======
         <h4 class="modal-title" id="xmlModalTitle">XML Viewer</h4>
       </div>
       <div class="modal-body">
-        <div id="btnContainer">
+        <div data-bind="visible: showXmlRenders()" id="btnContainer">
           <button type="button" class="btn btn-default btn-xs" style="float: right;" id="settingsBtn">Settings <span class="glyphicon glyphicon-cog"></span></button>
           <div class="dropdown" style="float: right; margin-right: 5px;">
             <button class="btn btn-default dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -176,21 +79,22 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li class="dropdown-header">Render As: </li>
-              <li><a id="renderXml">XML</a></li>
-              <li><a id="renderTable">Table</a></li>
+              <li><a href="#" id="renderXml">XML</a></li>
+              <li><a href="#" id="renderTable">Table</a></li>
             </ul>
           </div>
         </div>
-        <div id="settings-tab" style="display: none;">
+
+        <div data-bind="visible: showSettings()" id="settings-tab" style="display: none;">
           <div class="row">
-            <div class="col-md-1">
+            <div class="col-sm-1 col-md-1">
               <button type="button" class="btn btn-default btn-xs" id="settingsBackBtn"><span class="glyphicon glyphicon-menu-left"></span></button>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-2 col-md-2">
               <span style=""><strong>Preview: </strong></span><br>
-              <span id="settings-preview-theme"></span>
+              <span data-bind="text: previewStyle" id="settings-preview-theme"></span>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-8 col-md-6">
               <div class="panel panel-default">
                 <div class="panel-body">
                   <div id="xmlTree-settings" style="">
@@ -231,57 +135,272 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-offset-1 col-md-2">
+            <div class="col-sm-3 col-md-offset-1 col-md-2">
               <span style=""><strong>Theme: </strong></span>
             </div>
-            <div class="col-md-5">
+            <div class="col-sm-9 col-md-6" style="text-align: center;">
               <div class="btn-group" role="group" id="settings-theme-btns">
                 <button type="button" class="btn btn-default theme-btn" value="ie">IE</button>
                 <button type="button" class="btn btn-default theme-btn" value="chrome">Chrome</button>
                 <button type="button" class="btn btn-default theme-btn" value="ff">FireFox</button>
                 <button type="button" class="btn btn-default theme-btn" value="dark">Dark</button>
                 <button type="button" class="btn btn-default theme-btn" value="">No Theme</button>
+                <button type="button" class="btn btn-default theme-btn" value="custom">Custom</button>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4 col-md-3">
               <span style=""><strong>Current: </strong></span>
-              <span id="settings-current-theme"></span>
+              <span data-bind="text: appliedStyle" id="settings-current-theme"></span>
             </div>
           </div>
->>>>>>> origin/master
+          <div class="row" id="customXmlStyles">
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
+              <span>Angle Brackets</span><hr/>
+              <div class="row">
+                <div class="col-sm-3 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Small</a></li>
+                      <li><a href="#" id="renderTable">Medium</a></li>
+                      <li><a href="#" id="renderTable">Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Red</a></li>
+                      <li><a href="#" id="renderTable">Blue</a></li>
+                      <li><a href="#" id="renderTable">Green</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
+              <span>Node Value</span><hr/>
+              <div class="row">
+                <div class="col-sm-3 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Small</a></li>
+                      <li><a href="#" id="renderTable">Medium</a></li>
+                      <li><a href="#" id="renderTable">Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Red</a></li>
+                      <li><a href="#" id="renderTable">Blue</a></li>
+                      <li><a href="#" id="renderTable">Green</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
+              <span>Node Name</span><hr/>
+              <div class="row">
+                <div class="col-sm-3 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Small</a></li>
+                      <li><a href="#" id="renderTable">Medium</a></li>
+                      <li><a href="#" id="renderTable">Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Red</a></li>
+                      <li><a href="#" id="renderTable">Blue</a></li>
+                      <li><a href="#" id="renderTable">Green</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
+              <span>Attribute Name</span><hr/>
+              <div class="row">
+                <div class="col-sm-3 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Small</a></li>
+                      <li><a href="#" id="renderTable">Medium</a></li>
+                      <li><a href="#" id="renderTable">Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Red</a></li>
+                      <li><a href="#" id="renderTable">Blue</a></li>
+                      <li><a href="#" id="renderTable">Green</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
+              <span>Attribute Value</span><hr/>
+              <div class="row">
+                <div class="col-sm-3 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Small</a></li>
+                      <li><a href="#" id="renderTable">Medium</a></li>
+                      <li><a href="#" id="renderTable">Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Red</a></li>
+                      <li><a href="#" id="renderTable">Blue</a></li>
+                      <li><a href="#" id="renderTable">Green</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
+              <span>Attribute Equals</span><hr/>
+              <div class="row">
+                <div class="col-sm-3 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Small</a></li>
+                      <li><a href="#" id="renderTable">Medium</a></li>
+                      <li><a href="#" id="renderTable">Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Red</a></li>
+                      <li><a href="#" id="renderTable">Blue</a></li>
+                      <li><a href="#" id="renderTable">Green</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
+              <span>Attribute Quotes</span><hr/>
+              <div class="row">
+                <div class="col-sm-3 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Small</a></li>
+                      <li><a href="#" id="renderTable">Medium</a></li>
+                      <li><a href="#" id="renderTable">Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Red</a></li>
+                      <li><a href="#" id="renderTable">Blue</a></li>
+                      <li><a href="#" id="renderTable">Green</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 10px;">
+              <span>Toggle Icon</span><hr/>
+              <div class="row">
+                <div class="col-sm-3 col-md-6">
+                  <div class="dropdown custom-dropdown">
+                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" id="renderXml">Small</a></li>
+                      <li><a href="#" id="renderTable">Medium</a></li>
+                      <li><a href="#" id="renderTable">Large</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row" id="xmlTree">
 
         </div>
-<<<<<<< HEAD
-        <div class="row" id="xmlSettings">
 
+        <div data-bind="visible: showXmlRenders()" class="row">
+          <div class="col-sm-12 col-md-12" id="xmlTree">
+
+          </div>
+          <div class="row" id="xmlTable">
+
+          </div>
         </div>
       </div>
-      <!-- <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
-    </div> -->
-  </div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-=======
-        <div class="row" id="xmlTable">
-
-        </div>
-      </div>
-      <div class="modal-footer" id="settingsFooter" style="display:none;">
+      <div data-bind="visible: showSettings()" class="modal-footer" id="settingsFooter" style="display:none;">
         <button type="button" class="btn btn-primary" id="settingsSaveBtn">Save</button>
       </div>
     </div>
   </div>
 </div>
->>>>>>> origin/master
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/knockout/dist/knockout.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
