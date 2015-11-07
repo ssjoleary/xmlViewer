@@ -32,11 +32,6 @@
 
   <div class="container">
     <div class="header">
-      <!-- <ul class="nav nav-pills pull-right">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul> -->
     <h3 class="text-muted">xmlViewer</h3>
   </div>
 
@@ -153,250 +148,79 @@
               <span data-bind="text: appliedStyle" id="settings-current-theme"></span>
             </div>
           </div>
-          <div class="row" id="customXmlStyles">
-            <!-- ko foreach: customElements -->
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 10px;">
-              <span data-bind="text: element"></span><hr/>
-              <div class="row">
-                <!-- ko foreach: attributes -->
-                <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: value" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="">Small</a></li>
-                      <li><a href="#" id="">Medium</a></li>
-                      <li><a href="#" id="">Large</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- /ko -->
-              </div>
-            </div>
-            <!-- /ko -->
-            <!--
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
-              <span>Angle Brackets</span><hr/>
+          <div class="row" id="customXmlStyles" data-bind="visible: showCustomSettings()">
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 15px;">
+              <span data-bind="text: angleBracketText"></span><hr/>
               <div class="row">
                 <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Small</a></li>
-                      <li><a href="#" id="renderTable">Medium</a></li>
-                      <li><a href="#" id="renderTable">Large</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Red</a></li>
-                      <li><a href="#" id="renderTable">Blue</a></li>
-                      <li><a href="#" id="renderTable">Green</a></li>
-                    </ul>
-                  </div>
+                  <select data-bind="options: customFontSizes, value: angleBracketSize"></select>
+                  <select data-bind="options: customColours, value: angleBracketColour"></select>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
-              <span>Node Value</span><hr/>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 15px;">
+              <span data-bind="text: nodeValueText"></span><hr/>
               <div class="row">
                 <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Small</a></li>
-                      <li><a href="#" id="renderTable">Medium</a></li>
-                      <li><a href="#" id="renderTable">Large</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Red</a></li>
-                      <li><a href="#" id="renderTable">Blue</a></li>
-                      <li><a href="#" id="renderTable">Green</a></li>
-                    </ul>
-                  </div>
+                  <select data-bind="options: customFontSizes, value: nodeValueSize"></select>
+                  <select data-bind="options: customColours, value: nodeValueColour"></select>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
-              <span>Node Name</span><hr/>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 15px;">
+              <span data-bind="text: nodeNameText"></span><hr/>
               <div class="row">
                 <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Small</a></li>
-                      <li><a href="#" id="renderTable">Medium</a></li>
-                      <li><a href="#" id="renderTable">Large</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Red</a></li>
-                      <li><a href="#" id="renderTable">Blue</a></li>
-                      <li><a href="#" id="renderTable">Green</a></li>
-                    </ul>
-                  </div>
+                  <select data-bind="options: customFontSizes, value: nodeNameSize"></select>
+                  <select data-bind="options: customColours, value: nodeNameColour"></select>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
-              <span>Attribute Name</span><hr/>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 15px;">
+              <span data-bind="text: attrNameText"></span><hr/>
               <div class="row">
                 <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Small</a></li>
-                      <li><a href="#" id="renderTable">Medium</a></li>
-                      <li><a href="#" id="renderTable">Large</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Red</a></li>
-                      <li><a href="#" id="renderTable">Blue</a></li>
-                      <li><a href="#" id="renderTable">Green</a></li>
-                    </ul>
-                  </div>
+                  <select data-bind="options: customFontSizes, value: attrNameSize"></select>
+                  <select data-bind="options: customColours, value: attrNameColour"></select>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
-              <span>Attribute Value</span><hr/>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 15px;">
+              <span data-bind="text: attrValueText"></span><hr/>
               <div class="row">
                 <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Small</a></li>
-                      <li><a href="#" id="renderTable">Medium</a></li>
-                      <li><a href="#" id="renderTable">Large</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Red</a></li>
-                      <li><a href="#" id="renderTable">Blue</a></li>
-                      <li><a href="#" id="renderTable">Green</a></li>
-                    </ul>
-                  </div>
+                  <select data-bind="options: customFontSizes, value: attrValueSize"></select>
+                  <select data-bind="options: customColours, value: attrValueColour"></select>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
-              <span>Attribute Equals</span><hr/>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 15px;">
+              <span data-bind="text: attrEqualsText"></span><hr/>
               <div class="row">
                 <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Small</a></li>
-                      <li><a href="#" id="renderTable">Medium</a></li>
-                      <li><a href="#" id="renderTable">Large</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Red</a></li>
-                      <li><a href="#" id="renderTable">Blue</a></li>
-                      <li><a href="#" id="renderTable">Green</a></li>
-                    </ul>
-                  </div>
+                  <select data-bind="options: customFontSizes, value: attrEqualsSize"></select>
+                  <select data-bind="options: customColours, value: attrEqualsColour"></select>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center">
-              <span>Attribute Quotes</span><hr/>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 15px;">
+              <span data-bind="text: attrQuotesText"></span><hr/>
               <div class="row">
                 <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Small</a></li>
-                      <li><a href="#" id="renderTable">Medium</a></li>
-                      <li><a href="#" id="renderTable">Large</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketColour" class="btn btn-default dropdown-toggle btn-xs" type="button" id="angleBracketColour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Red</a></li>
-                      <li><a href="#" id="renderTable">Blue</a></li>
-                      <li><a href="#" id="renderTable">Green</a></li>
-                    </ul>
-                  </div>
+                  <select data-bind="options: customFontSizes, value: attrQuotesSize"></select>
+                  <select data-bind="options: customColours, value: attrQuotesColour"></select>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 10px;">
-              <span>Toggle Icon</span><hr/>
+            <div class="col-xs-6 col-sm-3 col-md-3" style="text-align: center; margin-top: 15px;">
+              <span data-bind="text: toggleIconText"></span><hr/>
               <div class="row">
                 <div class="col-sm-3 col-md-6">
-                  <div class="dropdown custom-dropdown">
-                    <button data-bind="text: angleBracketSize" class="btn btn-default dropdown-toggle btn-xs" type="button" data-toggle="dropdown" id="angleBracketSize" aria-haspopup="true" aria-expanded="true">
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#" id="renderXml">Small</a></li>
-                      <li><a href="#" id="renderTable">Medium</a></li>
-                      <li><a href="#" id="renderTable">Large</a></li>
-                    </ul>
-                  </div>
+                  <select data-bind="options: customFontSizes, value: toggleIconSize"></select>
+                  <select data-bind="options: customColours, value: toggleIconColour"></select>
                 </div>
               </div>
-            </div> -->
-
+            </div>
           </div>
         </div>
 

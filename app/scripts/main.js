@@ -4,16 +4,37 @@ var xmlViewer = (function(xmlViewer) {
   xmlViewer.xmlViewerViewModel = {
     showSettings: ko.observable(false),
     showXmlRenders: ko.observable(true),
+    showCustomSettings: ko.observable(false),
     appliedStyle: ko.observable(''),
     previewStyle: ko.observable(''),
 
-    customElements: ko.observableArray([{
-      'element': 'Angle Brackets',
-      'attributes': [{'name':'Size', 'value':'14px'}, {'name':'Colour', 'value':'Black'}]
-    }]),
+    customFontSizes: ko.observableArray(['10px', '12px', '14px', '16px', '18px']),
+    customColours: ko.observableArray(['Red', 'Green', 'Black', 'Blue']),
 
+    angleBracketText: 'Angle Bracket',
+    angleBracketColour: ko.observable('Black'),
     angleBracketSize: ko.observable('14px'),
-    angleBracketColour: ko.observable('Black')
+    nodeValueText: 'Node Value',
+    nodeValueColour: ko.observable('Black'),
+    nodeValueSize: ko.observable('14px'),
+    nodeNameText: 'Node Name',
+    nodeNameColour: ko.observable('Black'),
+    nodeNameSize: ko.observable('14px'),
+    attrNameText: 'Attribute Name',
+    attrNameColour: ko.observable('Black'),
+    attrNameSize: ko.observable('14px'),
+    attrValueText: 'Attribute Value',
+    attrValueColour: ko.observable('Black'),
+    attrValueSize: ko.observable('14px'),
+    attrEqualsText: 'Attribute Equals Symbol',
+    attrEqualsColour: ko.observable('Black'),
+    attrEqualsSize: ko.observable('14px'),
+    attrQuotesText: 'Attribute Quotes',
+    attrQuotesColour: ko.observable('Black'),
+    attrQuotesSize: ko.observable('14px'),
+    toggleIconText: 'Toggle Icon',
+    toggleIconSize: ko.observable('10px'),
+    toggleIconColour: ko.observable('Black')
   }
 
   var _appliedStyle = '',
@@ -148,6 +169,9 @@ var xmlViewer = (function(xmlViewer) {
     }
     return out;
   }
+  function _updateCustomTheme(selector, attribute, value) {
+    $('#xmlTree-settings').find('.treeview '+selector).css(attribute, value);
+  }
   var _self = {
     xmlContent  : {},
     $container : '',
@@ -158,7 +182,8 @@ var xmlViewer = (function(xmlViewer) {
       'chrome': 'Google Chrome',
       'ff': 'FireFox',
       'dark': 'Dark Theme',
-      '': 'No Theme'
+      '': 'No Theme',
+      'custom': 'Custom'
     },
 
     assignClickHandlers: function() {
@@ -191,6 +216,7 @@ var xmlViewer = (function(xmlViewer) {
         _applyTheme("#xmlTree-settings", _previewStyle, _tempStyle);
         _tempStyle = _previewStyle;
         xmlViewer.xmlViewerViewModel.previewStyle(_self.themes[_previewStyle]);
+        (_previewStyle === 'custom' ? xmlViewer.xmlViewerViewModel.showCustomSettings(true) : xmlViewer.xmlViewerViewModel.showCustomSettings(false));
       });
 
       $('#settingsSaveBtn')
@@ -199,6 +225,56 @@ var xmlViewer = (function(xmlViewer) {
         _appliedStyle = _tempStyle;
         xmlViewer.xmlViewerViewModel.appliedStyle(_self.themes[_appliedStyle]);
         Cookies.set('theme', _appliedStyle);
+      });
+    },
+    setUpSubscribers: function () {
+      xmlViewer.xmlViewerViewModel.angleBracketColour.subscribe(function(newValue){
+        _updateCustomTheme('span.tagBracket', "color", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.angleBracketSize.subscribe(function(newValue) {
+        _updateCustomTheme('span.tagBracket', "font-size", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.nodeValueColour.subscribe(function(newValue) {
+        _updateCustomTheme('span.nodeValue', "color", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.nodeValueSize.subscribe(function(newValue){
+        _updateCustomTheme('span.nodeValue', "font-size", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.nodeNameColour.subscribe(function(newValue){
+        _updateCustomTheme('span.tagName', "color", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.nodeNameSize.subscribe(function(newValue){
+        _updateCustomTheme('span.tagName', "font-size", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.attrNameColour.subscribe(function(newValue){
+        _updateCustomTheme('span.attrName', "color", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.attrNameSize.subscribe(function(newValue){
+        _updateCustomTheme('span.attrName', "font-size", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.attrValueColour.subscribe(function(newValue) {
+        _updateCustomTheme('span.attrValue', "color", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.attrValueSize.subscribe(function(newValue){
+        _updateCustomTheme('span.attrValue', "font-size", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.attrEqualsColour.subscribe(function(newValue) {
+        _updateCustomTheme('span.attrEquals', "color", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.attrEqualsSize.subscribe(function(newValue){
+        _updateCustomTheme('span.attrEquals', "font-size", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.attrQuotesColour.subscribe(function(newValue) {
+        _updateCustomTheme('span.attrQuotes', "color", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.attrQuotesSize.subscribe(function(newValue){
+        _updateCustomTheme('span.attrQuotes', "font-size", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.toggleIconColour.subscribe(function(newValue) {
+        _updateCustomTheme('div.hitarea', "color", newValue);
+      });
+      xmlViewer.xmlViewerViewModel.toggleIconSize.subscribe(function(newValue){
+        _updateCustomTheme('div.hitarea', "font-size", newValue);
       });
     },
     resetView: function () {
@@ -244,22 +320,6 @@ var xmlViewer = (function(xmlViewer) {
       tableHeaders =_eliminateDuplicates(tempTableHeaders);
       $('#xmlTable.table.thead')
     },
-    _changeTheme: function() {
-      if (_appliedStyle === '') {
-        _appliedStyle = "ff";
-      } else
-      if (_appliedStyle === 'ff') {
-        _appliedStyle = "chrome";
-      } else
-      if (_appliedStyle === "chrome") {
-        _appliedStyle = "dark";
-      } else
-      if (_appliedStyle === "dark") {
-        _appliedStyle = "";
-      }
-      $('#xmlTree').empty();
-      _self.redraw();
-    },
     loadXmlFromFile: function (xmlPath, containerSelector, callback) {
       _self.$container = $(containerSelector);
       $.ajax({
@@ -284,6 +344,7 @@ var xmlViewer = (function(xmlViewer) {
       _self.draw(containerSelector);
       if (!_self.hasInit) {
         ko.applyBindings(xmlViewer.xmlViewerViewModel, document.getElementById('xmlModal'));
+        _self.setUpSubscribers();
         _self.assignClickHandlers();
         _self.hasInit = true;
       }
